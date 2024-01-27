@@ -3,7 +3,7 @@ import java.util.List;
 
 public class ProductDescription {
 
-    private static final List<ProductDescription> productList = new ArrayList<>();
+    protected static List<ProductDescription> productDatabase = new ArrayList<>();
 
     private final String name;
     private String description;
@@ -20,7 +20,7 @@ public class ProductDescription {
         this.category = category;
         this.products = new ArrayList<>();
         this.comments = new ArrayList<>();
-        productList.add(this);
+        productDatabase.add(this);
     }
 
     public String getName() {
@@ -54,7 +54,7 @@ public class ProductDescription {
     // Method to add a new product
     public static ProductDescription addProduct(String name, String description, double price, boolean availability, Category category, List<Product> products, List<Comment> comments) {
         ProductDescription newProduct = new ProductDescription(name, description, price, availability, category, products, comments);
-        productList.add(newProduct);
+        productDatabase.add(newProduct);
         System.out.println("Product added: " + newProduct);
         return newProduct;
     }
@@ -70,13 +70,14 @@ public class ProductDescription {
 
     // Method to delete an existing product
     public void deleteProduct() {
-        productList.remove(this);
+        productDatabase.remove(this);
         System.out.println("Product deleted: " + this);
     }
 
     // Method to select a product
-    public void selectProduct() {
-        System.out.println("Product selected: " + this);
+    public static void selectProduct(ProductDescription selectedProduct) {
+        // Add your logic for handling the selected product, e.g., add it to the cart
+        System.out.println("Selected Product: " + selectedProduct);
     }
 
     public void addComment(Comment comment) {

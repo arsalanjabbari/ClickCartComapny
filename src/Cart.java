@@ -4,15 +4,14 @@ import java.util.List;
 public class Cart {
 
     private static int nextCartId = 1;
-
+    private static CART_FILL cart_status;
     private final int id;
-    private final List<ProductDescription> products;
-    private CART_FILL cart_status;
+    private static List<ProductDescription> products;
 
     public Cart() {
         this.id = nextCartId++;
-        this.products = new ArrayList<>();
-        this.cart_status = CART_FILL.EMPTY;
+        products = new ArrayList<>();
+        cart_status = CART_FILL.EMPTY;
     }
 
     public int getId() {
@@ -51,7 +50,7 @@ public class Cart {
     }
 
     // Method to check if the cart is empty or not
-    public void checkCart() {
+    public static void checkCart() {
         if (cart_status == CART_FILL.EMPTY) {
             System.out.println("Cart is empty.");
         } else {

@@ -1,6 +1,20 @@
 public class SuperAdmin extends User {
 
-    public SuperAdmin(String address, String fullName, String password, String phone, String username, String zipcode) {
-        super(address, fullName, password, phone, USER_ROLE.SUPER_ADMIN, username, zipcode);
+    private final String username;
+    private final String password;
+
+    SuperAdmin(String username, String password) {
+        super(username, password, USER_ROLE.SUPER_ADMIN);
+        this.username = "arsalan";
+        this.password = "191919";
     }
+
+    public String getUsername() {
+        return username;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
 }
