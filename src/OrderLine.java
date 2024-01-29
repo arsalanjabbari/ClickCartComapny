@@ -4,7 +4,7 @@ public class OrderLine {
 
     private final int lineNumber;
     private final double lineTotalPrice;
-    private final int quantity;
+    private int quantity;
     private final ProductDescription productDescription;
 
     public OrderLine(ProductDescription productDescription, int quantity) {
@@ -24,6 +24,10 @@ public class OrderLine {
 
     public int getQuantity() {
         return quantity;
+    }
+
+    public void setQuantity(int quantity) {
+        this.quantity = quantity;
     }
 
     public ProductDescription getProductDescription() {

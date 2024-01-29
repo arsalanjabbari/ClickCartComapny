@@ -122,14 +122,78 @@ public class Cart {
                 System.out.println("Cart canceled.");
                 break;
             case 3:
-                System.out.println(user.getCart());
-                // Logic to select and decrement the amount of a product
-                // Implement your logic here
+                Cart userCart = user.getCart();
+
+                // Display the products in the user's cart
+                List<OrderLine> orderLines = userCart.getOrderLines();
+                if (orderLines.isEmpty()) {
+                    System.out.println("Cart is empty.");
+                } else {
+                    System.out.println("Products in your cart:");
+                    for (int i = 0; i < orderLines.size(); i++) {
+                        OrderLine orderLine = orderLines.get(i);
+                        ProductDescription product = orderLine.getProductDescription();
+                        int quantity = orderLine.getQuantity();
+                        System.out.println((i + 1) + ". " + product.getName() + " - Quantity: " + quantity);
+                    }
+
+                    // Ask the user to select a product
+                    System.out.print("Enter the number of the product to select: ");
+                    int selectedProductIndex = scanner.nextInt();
+
+                    // Check if the selected index is valid
+                    if (selectedProductIndex >= 1 && selectedProductIndex <= orderLines.size()) {
+                        OrderLine selectedOrderLine = orderLines.get(selectedProductIndex - 1);
+
+                        // Decrement the amount of the selected product
+                        int currentQuantity = selectedOrderLine.getQuantity();
+                        if (currentQuantity > 1) {
+                            selectedOrderLine.setQuantity(currentQuantity - 1);
+                            System.out.println("Quantity of " + selectedOrderLine.getProductDescription().getName() + " decremented.");
+                        } else {
+                            // Remove the product from the cart if quantity becomes zero
+                            orderLines.remove(selectedProductIndex - 1);
+                            System.out.println("Product removed from the cart.");
+                        }
+                    } else {
+                        System.out.println("Invalid selection.");
+                    }
+                }
                 break;
+
             case 4:
-                // Logic to select and increment the amount of a product
-                // Implement your logic here
+                Cart userCart1 = user.getCart();
+
+                // Display the products in the user's cart
+                List<OrderLine> orderLines1 = userCart1.getOrderLines();
+                if (orderLines1.isEmpty()) {
+                    System.out.println("Cart is empty.");
+                } else {
+                    System.out.println("Products in your cart:");
+                    for (int i = 0; i < orderLines1.size(); i++) {
+                        OrderLine orderLine = orderLines1.get(i);
+                        ProductDescription product = orderLine.getProductDescription();
+                        int quantity = orderLine.getQuantity();
+                        System.out.println((i + 1) + ". " + product.getName() + " - Quantity: " + quantity);
+                    }
+
+                    // Ask the user to select a product
+                    System.out.print("Enter the number of the product to select: ");
+                    int selectedProductIndex = scanner.nextInt();
+
+                    // Check if the selected index is valid
+                    if (selectedProductIndex >= 1 && selectedProductIndex <= orderLines1.size()) {
+                        OrderLine selectedOrderLine = orderLines1.get(selectedProductIndex - 1);
+
+                        // Increment the amount of the selected product
+                        selectedOrderLine.setQuantity(selectedOrderLine.getQuantity() + 1);
+                        System.out.println("Quantity of " + selectedOrderLine.getProductDescription().getName() + " incremented.");
+                    } else {
+                        System.out.println("Invalid selection.");
+                    }
+                }
                 break;
+
             default:
                 System.out.println("Invalid choice. Please enter a valid number.");
         }
