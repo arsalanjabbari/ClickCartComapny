@@ -3,34 +3,58 @@ import java.util.List;
 import java.util.Scanner;
 
 public class Main {
+    static Scanner scanner = new Scanner(System.in);
+
 
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
 
-        User.setSuperAdmin();
+
+        User.initSuperAdmin();
 
         loginWelcome();
 
         int choice = scanner.nextInt();
+        scanner.nextLine();
 
         if (choice == 1) {
 
-            System.out.print("Enter your username: ");
-            String username = scanner.next();
+            System.out.println("Enter your username: ");
+            String username = scanner.nextLine();
 
-            System.out.print("Enter your password: ");
-            String password = scanner.next();
+            System.out.println("Enter your password: ");
+            String password = scanner.nextLine();
 
             roleWelcome();
-
             int roleChoice = scanner.nextInt();
-            String role = getRoleFromChoice(roleChoice);
+            USER_ROLE role = getRoleFromChoice(roleChoice);
 
             // Perform authentication
+            User user = null;
             if (User.authenticateUser(username, password, role)) {
                 System.out.println("Authentication successful!");
                 // Redirect the user based on their role
-                redirectToHomePage(role);
+                if (role.equals(USER_ROLE.CUSTOMER)) {
+                    for (Customer customer : User.customerDatabase) {
+                        if (customer.getUsername().equals(username)) {
+                            user = customer;
+                        }
+                    }
+                }
+                else if (role.equals(USER_ROLE.ADMIN)) {
+                    for (Admin admin : User.adminDatabase) {
+                        if (admin.getUsername().equals(username)) {
+                            user = admin;
+                        }
+                    }
+                }
+                else {
+                    for (SuperAdmin sadmin : User.superAdminDatabase) {
+                        if (sadmin.getUsername().equals(username)) {
+                            user = sadmin;
+                        }
+                    }
+                }
+                redirectToHomePage(user, role);
             } else {
                 System.out.println("Authentication failed. Please enter your information again or go to the registration page.");
                 // Alternative Flow: Ask the user to enter information again or go to the registration page
@@ -38,35 +62,29 @@ public class Main {
             }
         }
         else if (choice == 2) {
-            Customer.registerCustomer(scanner);
-            redirectToHomePage("CUSTOMER");
+            User customer = Customer.registerCustomer(scanner);
+            redirectToHomePage(customer, USER_ROLE.CUSTOMER);
         } else {
             System.out.println("Invalid choice. Exiting...");
         }
-
-        scanner.close();
     }
 
 
-    private static String getRoleFromChoice(int roleChoice) {
+    private static USER_ROLE getRoleFromChoice(int roleChoice) {
         switch (roleChoice) {
             case 1:
-                return "Customer";
+                return USER_ROLE.CUSTOMER;
             case 2:
-                return "Admin";
-            case 3:
-                return "Super-Admin";
+                return USER_ROLE.ADMIN;
             default:
-                return "";
+                return USER_ROLE.SUPER_ADMIN;
         }
     }
 
-    private static void redirectToHomePage(String role) {
+    private static void redirectToHomePage(User user, USER_ROLE role) {
 
         System.out.println("Redirecting to " + role + " home page...");
-
-        if (role.equals(USER_ROLE.CUSTOMER.toString())) {
-            Scanner scanner = new Scanner(System.in);
+        if (role.equals(USER_ROLE.CUSTOMER)) {
 
             boolean loggedIn = true;
 
@@ -76,32 +94,31 @@ public class Main {
                 System.out.println("2. Browse Categories");
                 System.out.println("3. Check Cart");
                 System.out.println("4. Logout");
-                System.out.print("Enter your choice (1-4): ");
+                System.out.println("Enter your choice (1-4): ");
 
                 int choice = scanner.nextInt();
+                scanner.nextLine();
 
                 switch (choice) {
                     case 1:
-                        OnlineShopSystem.searchProduct();
+                        OnlineShopSystem.searchProduct((Customer) user);
                         break;
                     case 2:
-                        OnlineShopSystem.browseCategory();
+                        OnlineShopSystem.browseCategory(user);
                         break;
                     case 3:
-                        Cart.checkCart();
+                        Cart.checkCart((Customer) user);
                         break;
                     case 4:
-                        System.out.println("Logging out. Goodbye!");
+                        System.out.println("Logged out. Goodbye!");
                         loggedIn = false;
                         break;
                     default:
                         System.out.println("Invalid choice. Please enter a number between 1 and 4.");
                 }
             }
-            scanner.close();
         }
-        else if (role.equals(USER_ROLE.ADMIN.toString())) {
-            Scanner scanner = new Scanner(System.in);
+        else if (role.equals(USER_ROLE.ADMIN)) {
 
             boolean loggedIn = true;
 
@@ -110,10 +127,13 @@ public class Main {
                 System.out.println("1. Manage Products");
                 System.out.println("2. Manage Customers");
                 System.out.println("3. Manage Categories");
-                System.out.println("4. Logout");
+                System.out.println("4. Delete a Comment");
+                System.out.println("5. Logout");
                 System.out.print("Enter your choice (1-4): ");
 
+
                 int choice = scanner.nextInt();
+                scanner.nextLine();
 
                 switch (choice) {
                     case 1:
@@ -126,18 +146,37 @@ public class Main {
                         OnlineShopSystem.manageCategory();
                         break;
                     case 4:
-                        System.out.println("Logging out. Goodbye!");
+                        System.out.println("Enter a product name: ");
+                        String relatedProductName = scanner.nextLine();
+                        ProductDescription relatedProduct = null;
+                        for (ProductDescription product : ProductDescription.productDatabase) {
+                            if (product.getName().equals(relatedProductName)) {
+                                relatedProduct = product;
+                                break;
+                            }
+
+                        }
+                        System.out.println("Enter a comment id: ");
+                        int relatedCmId = scanner.nextInt();
+                        Comment relatedCm = null;
+                        assert relatedProduct != null;
+                        for (Comment comment : relatedProduct.getComments()) {
+                            if (comment.getId() == relatedCmId) {
+                                relatedCm = comment;
+                            }
+                        }
+                        Comment.deleteComment(relatedProduct, relatedCm);
+                        break;
+                    case 5:
+                        System.out.println("Logged out. Goodbye!");
                         loggedIn = false;
                         break;
                     default:
                         System.out.println("Invalid choice. Please enter a number between 1 and 4.");
                 }
             }
-
-            scanner.close();
         }
-        else if (role.equals(USER_ROLE.SUPER_ADMIN.toString())) {
-            Scanner scanner = new Scanner(System.in);
+        else if (role.equals(USER_ROLE.SUPER_ADMIN)) {
 
             boolean loggedIn = true;
 
@@ -152,6 +191,7 @@ public class Main {
                 System.out.print("Enter your choice (1-6): ");
 
                 int choice = scanner.nextInt();
+                scanner.nextLine();
 
                 switch (choice) {
                     case 1:
@@ -170,15 +210,13 @@ public class Main {
                         Admin.demoteAdmin();
                         break;
                     case 6:
-                        System.out.println("Logging out. Goodbye!");
+                        System.out.println("Logged out. Goodbye!");
                         loggedIn = false;
                         break;
                     default:
                         System.out.println("Invalid choice. Please enter a number between 1 and 6.");
                 }
             }
-
-            scanner.close();
         }
 
     }
@@ -196,6 +234,7 @@ public class Main {
         System.out.println("2. Admin");
         System.out.println("3. Super-Admin");
         System.out.print("Enter your role (1, 2, or 3): ");
+
     }
 
 }

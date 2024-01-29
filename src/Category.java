@@ -1,9 +1,20 @@
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
+import java.util.stream.Collectors;
 
 public class Category {
+    static Scanner scanner = new Scanner(System.in);
+    protected static List<Category> categoryDatabase = new ArrayList<>();
 
-    private static final List<Category> categoryList = new ArrayList<>();
+    // Populate categoryDatabase with five test records
+    static {
+        categoryDatabase.add(new Category("Electronics"));
+        categoryDatabase.add(new Category("Appliances"));
+        categoryDatabase.add(new Category("Clothing"));
+        categoryDatabase.add(new Category("Books"));
+        categoryDatabase.add(new Category("Furniture"));
+    }
 
     private static int nextCategoryId = 1;
 
@@ -28,33 +39,58 @@ public class Category {
     }
 
     // Method to add a new category
-    public static Category addCategory(String name) {
+    public static void addCategory(String name) {
         Category newCategory = new Category(name);
-        // Add logic to store the new category, e.g., in a list or database
-        categoryList.add(newCategory);
+        categoryDatabase.add(newCategory);
         System.out.println("Category added: " + newCategory);
-        return newCategory;
     }
 
     // Method to edit an existing category
-    public void editCategory(String newName) {
-        this.name = newName;
-        // Add logic to update the category, e.g., in a list or database
-
-        System.out.println("Category edited: " + this);
+    public static void editCategory(Category category, String name) {
+        category.setName(name);
+        System.out.println("Product edited: " + category);
     }
 
     // Method to delete an existing category
-    public void deleteCategory() {
-        // Add logic to delete the category, e.g., from a list or database
-        categoryList.add(this);
-        System.out.println("Category deleted: " + this);
+    public static void deleteCategory(Category category) {
+        categoryDatabase.remove(category);
+        System.out.println("Category deleted: " + category);
     }
 
     // Method to select a category
-    public void selectCategory() {
-        // Add logic to select the category, e.g., for further operations
-        System.out.println("Category selected: " + this);
+    public static void selectCategory(Customer customer, Category category) {
+
+        System.out.println("Products in Category: " + category.getName());
+        List<ProductDescription> productsInCategory = getProductsInCategory(category);
+
+
+        if (!productsInCategory.isEmpty()) {
+            for (int i = 0; i < productsInCategory.size(); i++) {
+                System.out.println((i + 1) + ". " + productsInCategory.get(i).getName());
+            }
+
+            System.out.print("Enter the number of the product to select: ");
+            int selectedProductIndex = scanner.nextInt();
+
+            // Validate the selected index
+            if (selectedProductIndex >= 1 && selectedProductIndex <= productsInCategory.size()) {
+                ProductDescription selectedProduct = productsInCategory.get(selectedProductIndex - 1);
+                ProductDescription.selectProduct(customer, selectedProduct);
+            } else {
+                System.out.println("Invalid selection. Please enter a valid number.");
+            }
+        } else {
+            System.out.println("No products found in the selected category.");
+        }
+
+        scanner.close();
+    }
+
+
+    public static List<ProductDescription> getProductsInCategory(Category category) {
+        return ProductDescription.productDatabase.stream()
+                .filter(product -> product.getCategory().equals(category))
+                .collect(Collectors.toList());
     }
 
     @Override

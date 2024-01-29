@@ -1,3 +1,5 @@
+import java.util.Random;
+
 public class Product {
 
     String serialNumber;
@@ -5,13 +7,15 @@ public class Product {
     public Product() {
         this.serialNumber = generateSerialNumber();
     }
+    private static final Random random = new Random();
 
     public String getSerialNumber() {
         return serialNumber;
     }
 
     public String generateSerialNumber() {
-        return "SN-" + System.currentTimeMillis(); // A simple serial number generator (you might want to implement a better one)
+        int randomNumber = random.nextInt(1000000); // You can adjust the range as needed
+        return "SN-" + randomNumber;
     }
 
     @Override
@@ -20,6 +24,5 @@ public class Product {
                 "serialNumber='" + serialNumber + '\'' +
                 '}';
     }
-
 }
 

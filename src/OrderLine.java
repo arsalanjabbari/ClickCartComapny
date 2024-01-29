@@ -2,10 +2,10 @@ public class OrderLine {
 
     private static int nextLineNumber = 1;
 
-    private int lineNumber;
-    private double lineTotalPrice;
-    private int quantity;
-    private ProductDescription productDescription;
+    private final int lineNumber;
+    private final double lineTotalPrice;
+    private final int quantity;
+    private final ProductDescription productDescription;
 
     public OrderLine(ProductDescription productDescription, int quantity) {
         this.lineNumber = nextLineNumber++;

@@ -11,12 +11,12 @@ public class Delivery {
     }
 
     // Method to register a new delivery
-    public void registerDelivery() {
-        if (deliveryStatus == DELIVERIES.INQUEUE) {
+    public static void registerDelivery(Order order) {
+        if (order.getDeliveryStatus() == DELIVERIES.INQUEUE) {
             System.out.println("Delivery registered.");
-            deliveryStatus = DELIVERIES.ONWAY;
+            order.setDeliveryStatus(DELIVERIES.ONWAY);
         } else {
-            System.out.println("Cannot register delivery. Current delivery status is: " + deliveryStatus);
+            System.out.println("Cannot register delivery. Current delivery status is: " + order.getDeliveryStatus());
         }
     }
 

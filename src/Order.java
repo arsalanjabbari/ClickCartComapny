@@ -1,5 +1,4 @@
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
@@ -8,19 +7,23 @@ public class Order {
     private static int nextOrderId = 1;
 
     private final int orderId;
-    private double totalPrice;
-    private Date date;
-    private String time;
-    private String description;
-    private List<OrderLine> orderedProducts;
+    private final Customer customer;
+    private final double totalPrice;
+    private final Date date;
+    private final String time;
+    private final String description;
+    private final List<OrderLine> orderedProducts;
+    private DELIVERIES deliveryStatus;
 
-    public Order() {
+    public Order(Customer customer, List<OrderLine> orderedProducts, double totalPrice, DELIVERIES deliveryStatus) {
+        this.customer = customer;
         this.orderId = nextOrderId++;
-        this.totalPrice = 0.0;
+        this.totalPrice = totalPrice;
         this.date = new Date();
         this.time = new SimpleDateFormat("HH:mm:ss").format(new Date());
         this.description = "New Order";
-        this.orderedProducts = new ArrayList<>();
+        this.orderedProducts = orderedProducts;
+        this.deliveryStatus = deliveryStatus;
     }
 
     public int getOrderId() {
@@ -47,25 +50,26 @@ public class Order {
         return orderedProducts;
     }
 
+    public DELIVERIES getDeliveryStatus() {return deliveryStatus;}
+
+    public void setDeliveryStatus(DELIVERIES deliveryStatus) {
+        this.deliveryStatus = deliveryStatus;
+    }
+
     // Method to register an order with a list of products
-    public void registerOrder(List<OrderLine> products) {
-        if (products.isEmpty()) {
-            System.out.println("Cannot register an empty order.");
-            return;
-        }
+    public static Order registerOrder(Customer customer, List<OrderLine> lines, double totalPrice) {
+        Order order = new Order(customer, lines, totalPrice, DELIVERIES.INQUEUE);
 
-        this.orderedProducts.addAll(products);
+        System.out.println("Order registered: " + order);
 
-        // Calculate total price based on the prices of ordered products
-        this.totalPrice = products.stream().mapToDouble(OrderLine::getLineTotalPrice).sum();
-
-        System.out.println("Order registered: " + this);
+        return order;
     }
 
     @Override
     public String toString() {
         return "Order{" +
                 "orderId=" + orderId +
+                ", customer=" + customer +
                 ", totalPrice=" + totalPrice +
                 ", date=" + date +
                 ", time='" + time + '\'' +

@@ -10,9 +10,27 @@ public class User {
     private USER_ROLE role;
     private String username;
     private String zipcode;
+
     protected static List<Customer> customerDatabase = new ArrayList<>();
+    static {
+        customerDatabase.add(new Customer("ars", "123", "john@example.com", "123456789", "123-Main-St", "12345", "John-Doe"));
+        customerDatabase.add(new Customer("alice_smith", "pass456", "alice@example.com", "987654321", "456-Oak-St", "54321", "Alice-Smith"));
+        customerDatabase.add(new Customer("bob_jones", "secret789", "bob@example.com", "456123789", "789-Elm-St", "67890", "Bob-Jones"));
+        customerDatabase.add(new Customer("emily_white", "letmein123", "emily@example.com", "789123456", "234-Birch-St", "56789", "Emily-White"));
+        customerDatabase.add(new Customer("charlie_brown", "snoopy123", "charlie@example.com", "321654987", "789-Pine-St", "43210", "Charlie-Brown"));
+    }
+
     protected static List<Admin> adminDatabase = new ArrayList<>();
+    static {
+        adminDatabase.add(new Admin("admin1", "adminPass1"));
+        adminDatabase.add(new Admin("admin2", "adminPass2"));
+        adminDatabase.add(new Admin("admin3", "adminPass3"));
+        adminDatabase.add(new Admin("admin4", "adminPass4"));
+        adminDatabase.add(new Admin("admin5", "adminPass5"));
+    }
+
     protected static List<SuperAdmin> superAdminDatabase = new ArrayList<>();
+
 
     public User(String username, String password, String email, String phone, String address, String zipcode, String fullName, USER_ROLE role) {
         this.address = address;
@@ -35,7 +53,6 @@ public class User {
     public String getAddress() {
         return address;
     }
-
     public void setAddress(String address) {
         this.address = address;
     }
@@ -44,7 +61,6 @@ public class User {
     public String getFullName() {
         return fullName;
     }
-
     public void setFullName(String fullName) {
         this.fullName = fullName;
     }
@@ -53,7 +69,6 @@ public class User {
     public String getPassword() {
         return password;
     }
-
     public void setPassword(String password) {
         this.password = password;
     }
@@ -62,7 +77,6 @@ public class User {
     public String getPhone() {
         return phone;
     }
-
     public void setPhone(String phone) {
         this.phone = phone;
     }
@@ -71,7 +85,6 @@ public class User {
     public USER_ROLE getRole() {
         return role;
     }
-
     public void setRole(USER_ROLE role) {
         this.role = role;
     }
@@ -80,7 +93,6 @@ public class User {
     public String getUsername() {
         return username;
     }
-
     public void setUsername(String username) {
         this.username = username;
     }
@@ -89,19 +101,26 @@ public class User {
     public String getZipcode() {
         return zipcode;
     }
-
     public void setZipcode(String zipcode) {
         this.zipcode = zipcode;
     }
 
+    // Getter and Setter for email
+    public String getEmail() {
+        return email;
+    }
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
     // Method
-    public static boolean authenticateUser(String username, String password, String role) {
+    public static boolean authenticateUser(String username, String password, USER_ROLE role) {
         switch (role) {
-            case "Customer":
+            case CUSTOMER:
                 return authenticateCustomer(username, password);
-            case "Admin":
+            case ADMIN:
                 return authenticateAdmin(username, password);
-            case "Super-Admin":
+            case SUPER_ADMIN:
                 return authenticateSuperAdmin(username, password);
             default:
                 return false;
@@ -135,11 +154,7 @@ public class User {
         return false; // Authentication failed
     }
 
-    public String getEmail() {
-        return email;
-    }
-
-    public static void setSuperAdmin() {
+    protected static void initSuperAdmin() {
         SuperAdmin superAdmin = new SuperAdmin("arsalan", "191919");
         superAdminDatabase.add(superAdmin);
     }

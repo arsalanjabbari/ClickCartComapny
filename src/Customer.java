@@ -2,49 +2,83 @@ import java.util.Scanner;
 
 public class Customer extends User {
 
+    protected Cart cart;
+    public static Scanner scanner = new Scanner(System.in);
+
+
+
 
     public Customer(String username, String password, String email, String phone, String address, String zipcode, String fullname) {
         super(username, password, email, phone, address, zipcode, fullname, USER_ROLE.CUSTOMER);
+        this.cart = new Cart();
     }
 
     // Method to add a new customer
-    public void addCustomer() {
-        // Logic to add a new customer goes here
-        System.out.println("Customer added successfully.");
+    public static void addCustomer(String username, String password, String email, String phone, String address, String zipcode, String fullname) {
+        Customer newCustomer = new Customer(username, password, email, phone, address, zipcode, fullname);
+        customerDatabase.add(newCustomer);
+        System.out.println("Customer added: " + newCustomer);
     }
 
-    // Method to request confirmation (e.g., via email)
-    public void confirmationRequest() {
-        // Logic to send a confirmation request goes here
-        System.out.println("Confirmation request sent.");
-    }
-
-    // Method to create and assign a shopping cart to the customer
-    public void createAssignCart() {
-        // Logic to create and assign a shopping cart goes here
-        System.out.println("Shopping cart created and assigned.");
-    }
 
     // Method to delete a customer
-    public void deleteCustomer() {
-        // Logic to delete a customer goes here
-        System.out.println("Customer deleted successfully.");
+    public static void deleteCustomer(Customer customer) {
+        customerDatabase.remove(customer);
+        System.out.println("Customer deleted: " + customer);
     }
 
     // Method to edit customer information
-    public void editCustomer() {
-        // Logic to edit customer information goes here
-        System.out.println("Customer information edited successfully.");
+    public static void editCustomer(Customer customer, String password, String email, String phone, String address, String zipcode, String fullname) {
+        customer.setPassword(password);
+        customer.setEmail(email);
+        customer.setPhone(phone);
+        customer.setAddress(address);
+        customer.setZipcode(zipcode);
+        customer.setFullName(fullname);
+        System.out.println("Customer edited: " + customer);
     }
 
     // Method to promote a customer (e.g., to a premium status)
     public static void promoteCustomer() {
-        // Logic to promote a customer goes here
-        System.out.println("Customer promoted successfully.");
+
+        // Display the list of customers
+        System.out.println("List of Customers:");
+        for (Customer customer : User.customerDatabase) {
+            System.out.println(customer.getUsername());
+        }
+
+        // Prompt admin to enter the username of the customer to be promoted
+        System.out.print("Enter the username of the customer to promote: ");
+
+        String customerUsername = scanner.nextLine();
+
+        // Find the customer in the database
+        Customer customerToPromote = findCustomerByUsername(customerUsername);
+
+        if (customerToPromote != null) {
+            // Promote the customer
+            customerToPromote.setRole(USER_ROLE.ADMIN);
+            Admin adminToPromote = new Admin(customerToPromote.getUsername(), customerToPromote.getPassword());
+            customerDatabase.remove(customerToPromote);
+            deleteCustomer(customerToPromote);
+            adminDatabase.add(adminToPromote);
+            System.out.println("Customer " + customerUsername + " promoted to Admin successfully.");
+        } else {
+            System.out.println("Customer not found. Promotion failed.");
+        }
+    }
+
+    private static Customer findCustomerByUsername(String username) {
+        for (Customer customer : User.customerDatabase) {
+            if (customer.getUsername().equals(username)) {
+                return customer;
+            }
+        }
+        return null; // Customer not found
     }
 
 
-    public static void registerCustomer(Scanner scanner) {
+    public static Customer registerCustomer(Scanner scanner) {
         System.out.print("Enter your username: ");
         String username = scanner.next();
 
@@ -84,7 +118,7 @@ public class Customer extends User {
         if (username.isEmpty() || password.isEmpty() || fullname.isEmpty() || email.isEmpty() || phone.isEmpty() || address.isEmpty() || zipCode.isEmpty()) {
             System.out.println("Please fill all fields. Registration failed.");
             registerCustomer(scanner);
-            return;
+            return null;
         }
 
         // Register the customer
@@ -100,6 +134,7 @@ public class Customer extends User {
         } else {
             System.out.println("Email verification failed. Please try again.");
         }
+        return newCustomer;
     }
 
     private static boolean isUsernameReserved(String username) {
@@ -126,7 +161,7 @@ public class Customer extends User {
 
         // Simulate waiting for confirmation (2 minutes timeout)
         try {
-            Thread.sleep(2 * 15 * 1000); // Sleep for 2 minutes
+            Thread.sleep(2 * 5 * 1000); // Sleep for 2 minutes
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -134,6 +169,35 @@ public class Customer extends User {
         // Simulate receiving confirmation
         boolean confirmationReceived = true;
 
-        return confirmationReceived;
+        if (confirmationReceived) {
+            return true;
+        }
+        System.out.println("Your account did not verify! You met email verification deadline.");
+        return false;
+    }
+
+    // Setter for cart
+    public void setCart(Cart cart) {
+        this.cart = cart;
+    }
+
+    // Getter for cart
+    public Cart getCart() {
+        return cart;
+    }
+
+    @Override
+    public String toString() {
+        return "Customer{" +
+                "username='" + getUsername() + '\'' +
+                ", password='" + getPassword() + '\'' +
+                ", email='" + getEmail() + '\'' +
+                ", phone='" + getPhone() + '\'' +
+                ", address='" + getAddress() + '\'' +
+                ", zipcode='" + getZipcode() + '\'' +
+                ", fullname='" + getFullName() + '\'' +
+                ", role=" + getRole() +
+                ", cart=" + getCart() +
+                '}';
     }
 }
