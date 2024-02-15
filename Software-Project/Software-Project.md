@@ -181,45 +181,48 @@
 
 - ***Stakeholder Description***
 
-**Primary Stakeholders**
+   - **Primary Stakeholders**
+      1. Business Owners/Entrepreneurs
+      2. Operations Managers
+      3. Marketing and Sales Teams
+      4. Customers
 
-1. Business Owners/Entrepreneurs
-1. Operations Managers
-1. Marketing and Sales Teams
-1. Customers
-
-**Secondary Stakeholders**
-
-1. IT Support Team
-2. External Suppliers and Vendors![ref1]
-2. Payment Gateway Providers
+   - **Secondary Stakeholders**
+      1. IT Support Team
+      2. External Suppliers and Vendors
+      3. Payment Gateway Providers
+         
 - ***Key High-Level Goals***
-1. Enhanced User Experience: Develop an intuitive interface for Customers and streamlined management tools for Admins and Super-Admins.
-1. Scalable and Secure Platform: Ensure scalability to accommodate increased user traffic and implement robust security measures to protect user data.
-1. Seamless Integration: Establish seamless integration with external systems (Payment, Delivery, and Inventory) for efficient operations.
-1. Comprehensive Functionality: Provide comprehensive functionalities for product management, order processing, feedback management, and reporting.
-1. Performance and Reliability: Optimize performance for responsiveness and reliability, minimizing system downtime and ensuring high availability.
+   - Enhanced User Experience: Develop an intuitive interface for Customers and streamlined management tools for Admins and Super-Admins.
+   - Scalable and Secure Platform: Ensure scalability to accommodate increased user traffic and implement robust security measures to protect user data.
+   - Seamless Integration: Establish seamless integration with external systems (Payment, Delivery, and Inventory) for efficient operations.
+   - Comprehensive Functionality: Provide comprehensive functionalities for product management, order processing, feedback management, and reporting.
+   - Performance and Reliability: Optimize performance for responsiveness and reliability, minimizing system downtime and ensuring high availability.
+
 - ***Functional Features***
-1. User authentication and role-based access control.
-1. Product catalog management with category organization.
-1. Order placement, tracking, and status updates for Customers and Admins.
-1. Comments and feedback management for product reviews.
-1. Integration with external systems: Payment, Delivery, and Inventory.
+   - User authentication and role-based access control.
+   - Product catalog management with category organization.
+   - Order placement, tracking, and status updates for Customers and Admins.
+   - Comments and feedback management for product reviews.
+   - Integration with external systems: Payment, Delivery, and Inventory.
+     
 - ***Non-functional Features***
-1. Scalability and Performance:
-1. Fast Response Times: Ensures swift loading and processing of pages and transactions, reducing user wait times.![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.007.png)
-1. Scalability: Capable of handling increased user traffic and transaction volumes without compromising performance.
-1. Resource Optimization: Efficiently utilizes system resources to maintain optimal performance even during peak loads.
-2. Security and Compliance:
-   1. Access Control: Implements robust role-based access controls, ensuring appropriate permissions and limiting unauthorized access.
-   1. Data Protection: Utilizes encryption and secure data storage methods to safeguard sensitive information, preventing breaches or unauthorized access.
-   1. Regular Security Checks: Conducts routine security checks and updates to ensure ongoing protection.
-2. Reliability:
-   1. High Uptime: Operates consistently with minimal downtime, ensuring the system is available for users' needs.
-   1. Backup and Recovery: Regularly backs up data and maintains mechanisms for swift recovery in case of unforeseen system failures or data loss.
-2. Usability and User Experience:
-1. User-Friendly Interface: Offers an intuitive and easily navigable interface for users, enhancing their experience while interacting with the platform.
-1. Mobile Compatibility: Ensures the platform's functionality and responsiveness on various devices, including smartphones, enabling seamless access and use across different screens.
+   - Scalability and Performance:
+      - Fast Response Times: Ensures swift loading and processing of pages and transactions, reducing user wait times.
+      - Scalability: Capable of handling increased user traffic and transaction volumes without compromising performance.
+      - Resource Optimization: Efficiently utilizes system resources to maintain optimal performance even during peak loads.
+   - Security and Compliance:
+      - Access Control: Implements robust role-based access controls, ensuring appropriate permissions and limiting unauthorized access.
+      - Data Protection: Utilizes encryption and secure data storage methods to safeguard sensitive information, preventing breaches or unauthorized access.
+      - Regular Security Checks: Conducts routine security checks and updates to ensure ongoing protection.
+   - Reliability:
+      - High Uptime: Operates consistently with minimal downtime, ensuring the system is available for users' needs.
+      - Backup and Recovery: Regularly backs up data and maintains mechanisms for swift recovery in case of unforeseen system failures or data loss.
+   - Usability and User Experience:
+      - User-Friendly Interface: Offers an intuitive and easily navigable interface for users, enhancing their experience while interacting with the platform.
+      - Mobile Compatibility: Ensures the platform's functionality and responsiveness on various devices, including smartphones, enabling seamless access and use across different screens.
+    
+      
 - **Use-Cases Scenario**
 1. ***Authentication![ref1]***
 1. User chooses “Log-In” between “Log-In” and “Register” in the first page.
