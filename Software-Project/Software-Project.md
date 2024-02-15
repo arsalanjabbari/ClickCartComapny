@@ -26,7 +26,7 @@
    **Functional Requirements**
 
       1. User Authentication and Authorization:
-         a. Differentiate access levels for Customer, Admin, and Super-Admin.![ref1]
+         a. Differentiate access levels for Customer, Admin, and Super-Admin.
          b. Authenticate and authorize users based on roles and permissions.
   
       2. Customer Management:
@@ -356,7 +356,7 @@
       
       19. Delete Comment
          a. User (Admin or Super-Admin) enters a comment’s details to delete it in the system.
-         b. System deletes the comment and displays the appropriate message.![ref1]
+         b. System deletes the comment and displays the appropriate message.
       - Alternative Flow
          b.1. System doesn’t find the entered details of the comment.
          b.1.1. Displays appropriate error message and let user try again.
@@ -396,518 +396,537 @@
   
 <a name="_page16_x72.00_y438.24"></a>**Phase 3 - Domain Model and SSD**
 
-1. **Domain Model**
+**Domain Model**
 
    (Done after 4 iterations.)
+   
+   ![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.009.jpeg)
 
-2. **SSD![ref1]![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.009.jpeg)**
-1. ***Authentication![ref1]![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.010.jpeg)***
-2. ***Customer Registration![ref1]![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.011.jpeg)![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.012.jpeg)***
-3. ***Search Product![ref1]***
+**SSD**
 
-![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.013.jpeg)
+1. ***Authentication***
 
-4. ***Browse Category***
+   ![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.010.jpeg)
 
-![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.014.jpeg)
+3. ***Customer Registration***
 
-5. ***Write Comment![ref1]***
+   ![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.011.jpeg)![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.012.jpeg)
 
-![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.015.jpeg)
+5. ***Search Product***
+
+   ![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.013.jpeg)
+
+7. ***Browse Category***
+
+   ![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.014.jpeg)
+
+5. ***Write Comment***
+
+   ![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.015.jpeg)
 
 6. ***Add Product to Cart***
 
-![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.016.jpeg)
+   ![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.016.jpeg)
 
-7. ***Check Cart![ref1]***
+7. ***Check Cart***
 
-![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.017.png)
+   ![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.017.png)
 
 8. ***Change Amount in Cart***
 
-![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.018.jpeg)
+   ![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.018.jpeg)
 
-9. ***Delete Cart (Cancel Cart)![ref1]***
+9. ***Delete Cart (Cancel Cart)***
 
-![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.019.jpeg)
+   ![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.019.jpeg)
 
 10. ***Pay Cart (Finalize Cart)***
 
-![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.020.jpeg)
+   ![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.020.jpeg)
 
-11. ***Update Delivery Status![ref1]***
+11. ***Update Delivery Status***
 
-![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.021.png)
+   ![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.021.png)
 
 12. ***Add Product***
 
-![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.022.jpeg)
+   ![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.022.jpeg)
 
-13. ***Edit Product![ref1]***
+13. ***Edit Product***
 
-![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.023.jpeg)
+   ![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.023.jpeg)
 
 14. ***Delete Product***
 
-![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.024.jpeg)
+   ![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.024.jpeg)
 
-15. ***Add Category![ref1]***
+15. ***Add Category***
 
-![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.025.jpeg)
+   ![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.025.jpeg)
 
 16. ***Edit Category***
 
-![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.026.jpeg)
+   ![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.026.jpeg)
 
-17. ***Delete Category![ref1]***
+17. ***Delete Category***
 
-![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.027.jpeg)
+   ![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.027.jpeg)
 
 18. ***Reply Comment***
 
-![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.028.jpeg)
+   ![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.028.jpeg)
 
-19. ***Delete Comment![ref1]***
+19. ***Delete Comment***
 
-![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.029.jpeg)
+   ![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.029.jpeg)
 
 20. ***Add Customer***
 
-![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.030.jpeg)
+   ![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.030.jpeg)
 
-21. ***Edit Customer![ref1]***
+21. ***Edit Customer***
 
-![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.031.jpeg)
+   ![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.031.jpeg)
 
 22. ***Delete Customer***
 
-![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.032.jpeg)
+   ![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.032.jpeg)
 
-23. ***Manage Admin![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.033.png)***
+23. ***Manage Admin***
 
-![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.034.jpeg)
+   ![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.034.jpeg)
 
 24. ***Update Availability***
 
-![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.035.png)
+   ![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.035.png)
+
+
 
 <a name="_page30_x72.00_y600.67"></a>**Phase 4 - Operation Contract**
 
 1. **Authentication**
 
-***a. Pre-Condition***
+   - ***Pre-Condition***
+      - *U of User, S of System*
 
-*U of User, S of System![ref1]*
-
-2. ***Post-Condition***
-1. *New-Object: X*
-1. *Delete-Object: X*
-1. *New-Association: User U with System S*
-1. *Delete-Association: X*
-1. *Change-Attribute: X*
-3. ***Sub-Responsibility***
-
-*Checking entered username, password and role.*
+   - ***Post-Condition***
+      1. *New-Object: X*
+      2. *Delete-Object: X*
+      3. *New-Association: User U with System S*
+      4. *Delete-Association: X*
+      5. *Change-Attribute: X*
+         
+   - ***Sub-Responsibility***
+      - *Checking entered username, password and role.*
 
 2. **Customer Registration**
-1. ***Pre-Condition***
 
-*System S*
+   - ***Pre-Condition***
+      - *System S*
 
-2. ***Post-Condition***
-1. *New-Object: U of User, CT of Cart*
-1. *Delete-Object: X*
-1. *New-Association: User U with System S, Cart CT with User U*
-1. *Delete-Association: X*
-1. *Change-Attribute: X*
-3. ***Sub-Responsibility***
+   - ***Post-Condition***
+      1. *New-Object: U of User, CT of Cart*
+      2. *Delete-Object: X*
+      3. *New-Association: User U with System S, Cart CT with User U*
+      4. *Delete-Association: X*
+      5. *Change-Attribute: X*
 
-*Email verification.*
-
-*Save new user’s data in role-related stores.*
+   - ***Sub-Responsibility***
+      - *Email verification.*
+      - *Save new user’s data in role-related stores.*
 
 3. **Search Product**
-1. ***Pre-Condition***
 
-*ProductDescription PD*
+   - ***Pre-Condition***
+      - *ProductDescription PD*
 
-2. ***Post-Condition***
-1. *New-Object: X*
-1. *Delete-Object: X*
-1. *New-Association: X*
-1. *Delete-Association: X*
-1. *Change-Attribute: X*
-3. ***Sub-Responsibility***
+   - ***Post-Condition***
+      1. *New-Object: X*
+      2. *Delete-Object: X*
+      3. *New-Association: X*
+      4. *Delete-Association: X*
+      5. *Change-Attribute: X*
 
-*Retrieve similar product description with searched token.*
+   - ***Sub-Responsibility***
+      - *Retrieve similar product description with searched token.*
 
 4. **Browse Category**
-1. ***Pre-Condition** Category C*
-1. ***Post-Condition***
 
+   - ***Pre-Condition***
+      - *Category C*
 
-1. *New-Object: X![ref1]*
-1. *Delete-Object: X*
-1. *New-Association: X*
-1. *Delete-Association: X*
-1. *Change-Attribute: X*
-3. ***Sub-Responsibility** Nothing*
+   - ***Post-Condition***
+      1. *New-Object: X*
+      2. *Delete-Object: X*
+      3. *New-Association: X*
+      4. *Delete-Association: X*
+      5. *Change-Attribute: X*
+
+   - ***Sub-Responsibility***
+      - *Nothing*
+
 5. **Write Comment**
-1. ***Pre-Condition***
 
-*ProductDescription PD, User U*
+   - ***Pre-Condition***
+      - *ProductDescription PD, User U*
 
-2. ***Post-Condition***
-1. *New-Object: Comment CM*
-1. *Delete-Object: X*
-1. *New-Association: Comment CM with ProductDescription PD, Comment CM with User U*
-1. *Delete-Association: X*
-1. *Change-Attribute: New comment attributes*
-3. ***Sub-Responsibility***
+   - ***Post-Condition***
+      1. *New-Object: Comment CM*
+      2. *Delete-Object: X*
+      3. *New-Association: Comment CM with ProductDescription PD, Comment CM with User U*
+      4. *Delete-Association: X*
+      5. *Change-Attribute: New comment attributes*
 
-*Nothing*
+   - ***Sub-Responsibility***
+      - *Nothing*
 
 6. **Add Product to Cart**
-1. ***Pre-Condition***
 
-*Cart CT, Product P*
+   - ***Pre-Condition***
+      - *Cart CT, Product P*
 
-2. ***Post-Condition***
-1. *New-Object: X*
-1. *Delete-Object: X*
-1. *New-Association: Product P with Cart CT*
-1. *Delete-Association: X*
-1. *Change-Attribute: X*
-3. ***Sub-Responsibility***
+   - ***Post-Condition***
+      1. *New-Object: X*
+      2. *Delete-Object: X*
+      3. *New-Association: Product P with Cart CT*
+      4. *Delete-Association: X*
+      5. *Change-Attribute: X*
 
-*Nothing*
-
+   - ***Sub-Responsibility***
+      - *Nothing*
+        
 7. **Check Cart**
-1. ***Pre-Condition***
 
-*Cart CT*
+   - ***Pre-Condition***
+      - *Cart CT*
 
-2. ***Post-Condition***
-1. *New-Object: X*
-2. *Delete-Object: X![ref1]*
-2. *New-Association: X*
-2. *Delete-Association: X*
-2. *Change-Attribute: X*
-3. ***Sub-Responsibility***
+   - ***Post-Condition***
+      1. *New-Object: X*
+      2. *Delete-Object: X*
+      3. *New-Association: X*
+      4. *Delete-Association: X*
+      5. *Change-Attribute: X*
 
-*Calculate and report total price.*
-
-*Ask users to choose between pay and cancel.*
+   - ***Sub-Responsibility***
+      - *Calculate and report total price.*
+      - *Ask users to choose between pay and cancel.*
 
 8. **Change Amount in Cart**
-1. ***Pre-Condition***
 
-*Cart CT, Product P*
+   - ***Pre-Condition***
+      - *Cart CT, Product P*
 
-2. ***Post-Condition***
-1. *New-Object: X*
-1. *Delete-Object: X*
-1. *New-Association: Product P and Cart CT*
-1. *Delete-Association: Product P and Cart CT*
-1. *Change-Attribute: Price, Products*
-3. ***Sub-Responsibility***
+   - ***Post-Condition***
+      1. *New-Object: X*
+      2. *Delete-Object: X*
+      3. *New-Association: Product P and Cart CT*
+      4. *Delete-Association: Product P and Cart CT*
+      5. *Change-Attribute: Price, Products*
 
-*Recalculating the price and amount of each product in the cart.*
+   - ***Sub-Responsibility***
+      - *Recalculating the price and amount of each product in the cart.*
 
 9. **Delete Cart (Cancel Cart)**
-1. ***Pre-Condition***
 
-*Cart CT*
+   - ***Pre-Condition***
+      - *Cart CT*
 
-2. ***Post-Condition***
-1. *New-Object: X*
-1. *Delete-Object: X*
-1. *New-Association: X*
-1. *Delete-Association: Product P and Cart CT*
-1. *Change-Attribute: X*
-3. ***Sub-Responsibility***
+   - ***Post-Condition***
+      1. *New-Object: X*
+      2. *Delete-Object: X*
+      3. *New-Association: X*
+      4. *Delete-Association: Product P and Cart CT*
+      5. *Change-Attribute: X*
 
-*Nothing*
+   - ***Sub-Responsibility***
+      - *Nothing*
 
 10. **Pay Cart (Finalize Cart)**
-1. ***Pre-Condition***
 
-*Cart CT, User U, System S*
+   - ***Pre-Condition***
+      - *Cart CT, User U, System S*
 
-2. ***Post-Condition***
-1. *New-Object: PY of Payment, O of Order, D of Delivery*
-1. *Delete-Object: X*
-3. *New-Association: Order O with User U and Order O with Payment PY and with Delivery D![ref1]*
-3. *Delete-Association: Product P with Cart CT*
-3. *Change-Attribute: Pay-Status to Paid everywhere, Delivery-Status initialize everywhere*
-3. ***Sub-Responsibility***
+   - ***Post-Condition***
+      1. *New-Object: PY of Payment, O of Order, D of Delivery*
+      2. *Delete-Object: X*
+      3. *New-Association: Order O with User U and Order O with Payment PY and with Delivery D*
+      4. *Delete-Association: Product P with Cart CT*
+      5. *Change-Attribute: Pay-Status to Paid everywhere, Delivery-Status initialize everywhere*
 
-*Calculate and pass the total price to the payment system.*
-
-*Pass details to the delivery system.*
+   - ***Sub-Responsibility***
+      - *Calculate and pass the total price to the payment system.*
+      - *Pass details to the delivery system.*
 
 11. **Update Delivery Status**
-1. ***Pre-Condition***
 
-*System S, Delivery D, Order O*
+   - ***Pre-Condition***
+      - *System S, Delivery D, Order O*
 
-2. ***Post-Condition***
-1. *New-Object: X*
-1. *Delete-Object: X*
-1. *New-Association: X*
-1. *Delete-Association: X*
-1. *Change-Attribute: Update Delivery Status*
-3. ***Sub-Responsibility***
+   - ***Post-Condition***
+      1. *New-Object: X*
+      2. *Delete-Object: X*
+      3. *New-Association: X*
+      4. *Delete-Association: X*
+      5. *Change-Attribute: Update Delivery Status*
 
-*Update new delivery statuses in the order datastore.*
+   - ***Sub-Responsibility***
+      - *Update new delivery statuses in the order datastore.*
 
 12. **Add Product**
-1. ***Pre-Condition***
 
-*System S, User U*
+   - ***Pre-Condition***
+      - *System S, User U*
 
-2. ***Post-Condition***
-1. *New-Object: ProductDescription PD*
-1. *Delete-Object: X*
-1. *New-Association: ProductDescription PD with System S*
-1. *Delete-Association: X*
-1. *Change-Attribute: ProductDescription attributes*
-3. ***Sub-Responsibility***
+   - ***Post-Condition***
+      1. *New-Object: ProductDescription PD*
+      2. *Delete-Object: X*
+      3. *New-Association: ProductDescription PD with System S*
+      4. *Delete-Association: X*
+      5. *Change-Attribute: ProductDescription attributes*
 
-*Nothing*
+   - ***Sub-Responsibility***
+      - *Nothing*
 
 13. **Edit Product**
-1. ***Pre-Condition***
 
-*User U, ProductDescription PD, System S*
+   - ***Pre-Condition***
+      - *User U, ProductDescription PD, System S*
 
-2. ***Post-Condition***
-1. *New-Object: X*
-2. *Delete-Object: X![ref1]*
-2. *New-Association: X*
-2. *Delete-Association: X*
-2. *Change-Attribute: Edited atts. in ProductDescription*
-3. ***Sub-Responsibility***
+   - ***Post-Condition***
+      1. *New-Object: X*
+      2. *Delete-Object: X*
+      3. *New-Association: X*
+      4. *Delete-Association: X*
+      5. *Change-Attribute: Edited atts. in ProductDescription*
 
-*Nothing*
+   - ***Sub-Responsibility***
+      - *Nothing*
 
 14. **Delete Product**
-1. ***Pre-Condition***
 
-*User U, ProductDescription PD, System S*
+   - ***Pre-Condition***
+      - *User U, ProductDescription PD, System S*
 
-2. ***Post-Condition***
-1. *New-Object: X*
-1. *Delete-Object: PD of ProductDescription*
-1. *New-Association: X*
-1. *Delete-Association: X*
-1. *Change-Attribute: X*
-3. ***Sub-Responsibility***
+   - ***Post-Condition***
+      1. *New-Object: X*
+      2. *Delete-Object: PD of ProductDescription*
+      3. *New-Association: X*
+      4. *Delete-Association: X*
+      5. *Change-Attribute: X*
 
-*Nothing*
+   - ***Sub-Responsibility***
+      - *Nothing*
 
 15. **Add Category**
-1. ***Pre-Condition***
 
-*System S, User U*
+   - ***Pre-Condition***
+      - *System S, User U*
 
-2. ***Post-Condition***
-1. *New-Object: Category CG*
-1. *Delete-Object: X*
-1. *New-Association: Category CG with System S*
-1. *Delete-Association: X*
-1. *Change-Attribute: Category attributes*
-3. ***Sub-Responsibility***
+   - ***Post-Condition***
+      1. *New-Object: Category CG*
+      2. *Delete-Object: X*
+      3. *New-Association: Category CG with System S*
+      4. *Delete-Association: X*
+      5. *Change-Attribute: Category attributes*
 
-*Nothing*
+   - ***Sub-Responsibility***
+      - *Nothing*
 
 16. **Edit Category**
-1. ***Pre-Condition***
 
-*Category CG, User U*
+   - ***Pre-Condition***
+      - *Category CG, User U*
 
-2. ***Post-Condition***
-1. *New-Object: X*
-1. *Delete-Object: X*
-1. *New-Association: X*
-1. *Delete-Association: X*
-5. *Change-Attribute: Category edited attributes![ref1]*
-3. ***Sub-Responsibility***
+   - ***Post-Condition***
+      1. *New-Object: X*
+      2. *Delete-Object: X*
+      3. *New-Association: X*
+      4. *Delete-Association: X*
+      5. *Change-Attribute: Category edited attributes*
 
-*Nothing*
+   - ***Sub-Responsibility***
+      - *Nothing*
 
 17. **Delete Category**
-1. ***Pre-Condition***
 
-*User U, Category CG*
+   - ***Pre-Condition***
+      - *User U, Category CG*
 
-2. ***Post-Condition***
-1. *New-Object: X*
-1. *Delete-Object: Category CG*
-1. *New-Association: X*
-1. *Delete-Association: X*
-1. *Change-Attribute: X*
-3. ***Sub-Responsibility***
+   - ***Post-Condition***
+      1. *New-Object: X*
+      2. *Delete-Object: Category CG*
+      3. *New-Association: X*
+      4. *Delete-Association: X*
+      5. *Change-Attribute: X*
 
-*Nothing*
+   - ***Sub-Responsibility***
+      - *Nothing*
 
 18. **Reply Comment**
-1. ***Pre-Condition***
 
-*CM1 Comment*
+   - ***Pre-Condition***
+      - *CM1 Comment*
 
-2. ***Post-Condition***
-1. *New-Object: CM of Comment*
-1. *Delete-Object: X*
-1. *New-Association: CM of Comment and CM1 of Comment*
-1. *Delete-Association: X*
-1. *Change-Attribute: CM1 replies attribute appended*
-3. ***Sub-Responsibility***
+   - ***Post-Condition***
+      1. *New-Object: CM of Comment*
+      2. *Delete-Object: X*
+      3. *New-Association: CM of Comment and CM1 of Comment*
+      4. *Delete-Association: X*
+      5. *Change-Attribute: CM1 replies attribute appended*
 
-*Match entered comment id to reply.*
+   - ***Sub-Responsibility***
+      - *Match entered comment id to reply.*
 
 19. **Delete Comment**
-1. ***Pre-Condition***
 
-*CM Comment*
+   - ***Pre-Condition***
+      - *CM Comment*
 
-2. ***Post-Condition***
-1. *New-Object: X*
-1. *Delete-Object: CM of Comment*
-1. *New-Association: X*
-1. *Delete-Association: X*
-1. *Change-Attribute: X*
-3. ***Sub-Responsibility ![ref1]**Nothing*
+   - ***Post-Condition***
+      1. *New-Object: X*
+      2. *Delete-Object: CM of Comment*
+      3. *New-Association: X*
+      4. *Delete-Association: X*
+      5. *Change-Attribute: X*
+
+   - ***Sub-Responsibility***
+      - *Nothing*
+
 20. **Add Customer**
-1. ***Pre-Condition***
 
-*System S, User U*
+   - ***Pre-Condition***
+      - *System S, User U*
 
-2. ***Post-Condition***
-1. *New-Object: User C*
-1. *Delete-Object: X*
-1. *New-Association: User C with System S*
-1. *Delete-Association: X*
-1. *Change-Attribute: Customer attributes*
-3. ***Sub-Responsibility***
+   - ***Post-Condition***
+      1. *New-Object: User C*
+      2. *Delete-Object: X*
+      3. *New-Association: User C with System S*
+      4. *Delete-Association: X*
+      5. *Change-Attribute: Customer attributes*
 
-*Nothing*
+   - ***Sub-Responsibility***
+      - *Nothing*
 
 21. **Edit Customer**
-1. ***Pre-Condition***
 
-*User U, User C, System S*
+   - ***Pre-Condition***
+      - *User U, User C, System S*
 
-2. ***Post-Condition***
-1. *New-Object: X*
-1. *Delete-Object: X*
-1. *New-Association: X*
-1. *Delete-Association: X*
-1. *Change-Attribute: Customer edited attributes*
-3. ***Sub-Responsibility***
+   - ***Post-Condition***
+      1. *New-Object: X*
+      2. *Delete-Object: X*
+      3. *New-Association: X*
+      4. *Delete-Association: X*
+      5. *Change-Attribute: Customer edited attributes*
 
-*Nothing*
+   - ***Sub-Responsibility***
+      - *Nothing*
 
 22. **Delete Customer**
-1. ***Pre-Condition***
 
-*User U, User C, System S*
+   - ***Pre-Condition***
+      - *User U, User C, System S*
 
-2. ***Post-Condition***
-1. *New-Object: X*
-1. *Delete-Object: User C*
-1. *New-Association: X*
-1. *Delete-Association: X*
-1. *Change-Attribute: X*
-3. ***Sub-Responsibility***
+   - ***Post-Condition***
+      1. *New-Object: X*
+      2. *Delete-Object: User C*
+      3. *New-Association: X*
+      4. *Delete-Association: X*
+      5. *Change-Attribute: X*
 
-*Nothing*
+   - ***Sub-Responsibility***
+      - *Nothing*
 
-23. **Manage Admin![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.036.png)**
-1. ***Pre-Condition***
+23. **Manage Admin**
 
-*SA User, C User/A User*
+   - ***Pre-Condition***
+      - *SA User, C User/A User*
 
-2. ***Post-Condition***
-1. *New-Object: X*
-1. *Delete-Object: X*
-1. *New-Association: X*
-1. *Delete-Association: X*
-1. *Change-Attribute: Role in User based on promotion/demotion.*
-3. ***Sub-Responsibility***
+   - ***Post-Condition***
+      1. *New-Object: X*
+      2. *Delete-Object: X*
+      3. *New-Association: X*
+      4. *Delete-Association: X*
+      5. *Change-Attribute: Role in User based on promotion/demotion.*
 
-*Control changes in user abilities.*
+   - ***Sub-Responsibility***
+      - *Control changes in user abilities.*
 
 24. **Update Availability**
-1. ***Pre-Condition***
 
-*Product P*
+   - ***Pre-Condition***
+      - *Product P*
 
-2. ***Post-Condition***
-1. *New-Object: X*
-1. *Delete-Object: X*
-1. *New-Association: X*
-1. *Delete-Association: X*
-1. *Change-Attribute: Update Availability Status in products-relateds*
-3. ***Sub-Responsibility***
+   - ***Post-Condition***
+      1. *New-Object: X*
+      2. *Delete-Object: X*
+      3. *New-Association: X*
+      4. *Delete-Association: X*
+      5. *Change-Attribute: Update Availability Status in products-relateds*
 
-*Update new availability statuses in the product datastore.*
+   - ***Sub-Responsibility***
+      - *Update new availability statuses in the product datastore.*
+
+
+
+
 
 <a name="_page38_x72.00_y592.29"></a>**Phase 5 - Method Retrivation and Class Diagram**
 
 - **Method Retrivation**
-  - *Login(username, password, role)*
-  - *Registration(username, password, fullname, email, phone, address, zipcode)*
-- *SendVerificationEmail(email)![ref1]*
-- *CreateAssignCart(username)*
-- *SearchProduct(product\_name)*
-- *SelectProduct(product\_id)*
-- *BrowseCategory(category\_name)*
-- *SelectCategory(category\_id)*
-- *WriteComment(username, product\_id, comment\_text)*
-- *Add2Cart(cart\_id, product\_id)*
-- *CheckCart(cart\_id)*
-- *IncrementBuyAmount(cart\_id, product\_id)*
-- *DecrementBuyAmount(cart\_id, product\_id)*
-- *CancelCart(cart\_id)*
-- *ConfirmCart(cart\_id)*
-- *PaymentRequest(order\_id)*
-- *CalculatePrice(cart\_id)*
-- *ConfirmationRequest(cart\_id)*
-- *RegisterOrder(username, date, time, order\_id, total\_price, description, delivery\_st, pay\_st)*
-- *RegisterDelivery(order\_id)*
-- *ClearCart(cart\_id)*
-- *UpdateDeliveries()*
-- *UpdateAvailabilities()*
-- *ManageProduct(cmd)*
-- *AddProduct(id, name, price, description, availability, category)*
-- *EditProduct(id, name, price, description, availability, category)*
-- *DeleteProduct(id)*
-- *ManageCustomer(cmd)*
-- *AddCustomer(username, password, email, phone, address, fullname, zipcode)*
-- *EditCustomer(username, password, email, phone, address, fullname, zipcode)*
-- *DeleteCustomer(username)*
-- *ManageCategory(cmd)*
-- *AddCategory(id, name)*
-- *EditCategory(id, name)*
-- *DeleteCategory(id)*
-- *PromoteCustomer(username)*
-- *DemoteAdmin(username)*
-- *ReplyComment(alpha\_cm\_id, content)*
-- *DeleteComment(id)*
-- **Class Diagram (Methods displayed without their parameters in case of![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.037.png)**
+   - *Login(username, password, role)*
+   - *Registration(username, password, fullname, email, phone, address, zipcode)*
+   - *SendVerificationEmail(email)*
+   - *CreateAssignCart(username)*
+   - *SearchProduct(product\_name)*
+   - *SelectProduct(product\_id)*
+   - *BrowseCategory(category\_name)*
+   - *SelectCategory(category\_id)*
+   - *WriteComment(username, product\_id, comment\_text)*
+   - *Add2Cart(cart\_id, product\_id)*
+   - *CheckCart(cart\_id)*
+   - *IncrementBuyAmount(cart\_id, product\_id)*
+   - *DecrementBuyAmount(cart\_id, product\_id)*
+   - *CancelCart(cart\_id)*
+   - *ConfirmCart(cart\_id)*
+   - *PaymentRequest(order\_id)*
+   - *CalculatePrice(cart\_id)*
+   - *ConfirmationRequest(cart\_id)*
+   - *RegisterOrder(username, date, time, order\_id, total\_price, description, delivery\_st, pay\_st)*
+   - *RegisterDelivery(order\_id)*
+   - *ClearCart(cart\_id)*
+   - *UpdateDeliveries()*
+   - *UpdateAvailabilities()*
+   - *ManageProduct(cmd)*
+   - *AddProduct(id, name, price, description, availability, category)*
+   - *EditProduct(id, name, price, description, availability, category)*
+   - *DeleteProduct(id)*
+   - *ManageCustomer(cmd)*
+   - *AddCustomer(username, password, email, phone, address, fullname, zipcode)*
+   - *EditCustomer(username, password, email, phone, address, fullname, zipcode)*
+   - *DeleteCustomer(username)*
+   - *ManageCategory(cmd)*
+   - *AddCategory(id, name)*
+   - *EditCategory(id, name)*
+   - *DeleteCategory(id)*
+   - *PromoteCustomer(username)*
+   - *DemoteAdmin(username)*
+   - *ReplyComment(alpha\_cm\_id, content)*
+   - *DeleteComment(id)*
 
-  **abstraction)**
+
+- **Class Diagram (Methods displayed without their parameters in case of abstraction)**
 
 ![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.038.jpeg)
+
 
 <a name="_page40_x72.00_y418.68"></a>**Phase 6 - Sequence Diagram and Communication Diagram**
 
 - **Sequence Diagram**
 
-  # There may be a longer way to reach the goal-use-case, but in this phase we are choosing the shortest path.
+  There may be a longer way to reach the goal-use-case, but in this phase we are choosing the shortest path.
 
-1. *Authentication![ref1]*
+1. *Authentication*
 
 ![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.039.jpeg)
 
@@ -915,7 +934,7 @@
 
 ![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.040.jpeg)
 
-3. *Search Product![ref1]*
+3. *Search Product*
 
 ![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.041.jpeg)
 
@@ -923,7 +942,7 @@
 
 ![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.042.jpeg)
 
-5. *Write Comment![ref1]*
+5. *Write Comment*
 
 ![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.043.jpeg)
 
@@ -931,8 +950,11 @@
 
 ![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.044.jpeg)
 
-7. *Check Cart![ref1]![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.045.png)*
-8. *Change Amount in Cart![ref1]*
+7. *Check Cart*
+
+![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.045.png)
+
+9. *Change Amount in Cart*
 
 ![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.046.png)
 
@@ -940,7 +962,7 @@
 
 ![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.047.png)
 
-10. *Pay Cart![ref1]*
+10. *Pay Cart*
 
 ![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.048.jpeg)
 
@@ -948,7 +970,7 @@
 
 ![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.049.png)
 
-12. *Add Product![ref1]*
+12. *Add Product*
 
 ![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.050.jpeg)
 
@@ -956,7 +978,7 @@
 
 ![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.051.jpeg)
 
-14. *Delete Product![ref1]*
+14. *Delete Product*
 
 ![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.052.png)
 
@@ -964,7 +986,7 @@
 
 ![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.053.png)
 
-16. *Edit Category![ref1]*
+16. *Edit Category*
 
 ![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.054.png)
 
@@ -972,7 +994,7 @@
 
 ![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.055.png)
 
-18. *Reply Comment![ref1]*
+18. *Reply Comment*
 
 ![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.056.jpeg)
 
@@ -980,7 +1002,7 @@
 
 ![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.057.jpeg)
 
-20. *Add Customer![ref1]*
+20. *Add Customer*
 
 ![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.058.jpeg)
 
@@ -988,7 +1010,7 @@
 
 ![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.059.jpeg)
 
-22. *Delete Customer![ref1]*
+22. *Delete Customer*
 
 ![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.060.jpeg)
 
@@ -996,107 +1018,120 @@
 
 ![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.061.png)
 
-24. *Update Availability![ref1]![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.062.png)![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.063.png)*
-- **Communication Diagram![ref1]**
-- *Authentication*
+24. *Update Availability*
 
-![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.064.png)
+![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.062.png)![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.063.png)
 
-- *Customer Registration*
 
-![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.065.png)
+- **Communication Diagram**
+     
+   - *Authentication*
+   
+   ![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.064.png)
+   
+   - *Customer Registration*
+   
+   ![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.065.png)
+   
+   - *Search Product*
+   
+   ![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.066.png)
+   
+   - *Browse Category*
+   
+   ![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.067.png)
+   
+   - *Write Comment*
+   
+   ![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.068.jpeg)
+   
+   - *Add Product to Cart*
+   
+   ![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.069.jpeg)
+   
+   - *Check Cart*
+   
+   ![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.070.png)
+   
+   - *Change Amount in Cart*
+   
+   ![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.071.png)
+   
+   - *Cancel Cart*
+   
+   ![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.072.png)
+   
+   - *Pay Cart*
+   
+   ![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.073.jpeg)
+   
+   - *Update Delivery Status*
+   
+   ![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.074.png)
+   
+   - *Add Product*
+   
+   ![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.075.png)
+   
+   - *Edit Product*
+   
+   ![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.076.png)
+   
+   - *Delete Product*
+   
+   ![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.077.png)
+   
+   - *Add Category*
+   
+   ![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.078.png)
+   
+   - *Edit Category*
+   
+   ![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.079.png)
+   
+   - *Delete Category*
+   
+   ![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.080.png)
+   
+   - *Reply Comment*
+   
+   ![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.081.jpeg)
+  
+   - *Delete Comment*
+   
+   ![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.082.jpeg)
+   
+   - *Add Customer*
+   
+   ![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.083.png)
+   
+   - *Edit Customer*
+   
+   ![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.084.png)
+   
+   - *Delete Customer*
+   
+   ![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.085.png)
+   
+   - *Manage Admin*
+   
+   ![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.086.png)
+   
+   ![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.087.png)
+   
+   - *Update Availability*
+   
+   ![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.088.png)
+   
+   - *Startup Use Case Collaboration Diagram*
+   
+   ![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.089.jpeg)
 
-- *Search Product*
 
-![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.066.png)
-
-- *Browse Category*
-
-![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.067.png)
-
-- *Write Comment![ref1]![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.068.jpeg)*
-- *Add Product to Cart![ref1]*
-
-![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.069.jpeg)
-
-- *Check Cart*
-
-![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.070.png)
-
-- *Change Amount in Cart![ref1]*
-
-![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.071.png)
-
-- *Cancel Cart*
-
-![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.072.png)
-
-- *Pay Cart![ref1]*
-
-![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.073.jpeg)
-
-- *Update Delivery Status*
-
-![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.074.png)
-
-- *Add Product*
-
-![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.075.png)
-
-- *Edit Product![ref1]*
-
-![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.076.png)
-
-- *Delete Product*
-
-![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.077.png)
-
-- *Add Category*
-
-![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.078.png)
-
-- *Edit Category*
-
-![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.079.png)
-
-- *Delete Category*
-
-![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.080.png)
-
-- *Reply Comment![ref1]![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.081.jpeg)*
-- *Delete Comment![ref1]*
-
-![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.082.jpeg)
-
-- *Add Customer*
-
-![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.083.png)
-
-- *Edit Customer*
-
-![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.084.png)
-
-- *Delete Customer![ref1]*
-
-![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.085.png)
-
-- *Manage Admin*
-
-![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.086.png)
-
-![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.087.png)
-
-- *Update Availability*
-
-![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.088.png)
-
-- *Startup Use Case Collaboration Diagram*
-
-![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.089.jpeg)
 
 <a name="_page62_x72.00_y656.10"></a>**Glossary**
 
-***SuperAdmin:*** A privileged user with the highest level of access and authority within a system, often possessing rights to manage and oversee various administrative functions and settings.![ref1]
+***SuperAdmin:*** A privileged user with the highest level of access and authority within a system, often possessing rights to manage and oversee various administrative functions and settings.
 
 ***PromoteCustomer:*** The action of elevating a regular customer account to a higher level within the system, granting additional privileges or access rights typically associated with an administrative role.
 
