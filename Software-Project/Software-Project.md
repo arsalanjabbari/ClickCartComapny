@@ -172,7 +172,7 @@
 ![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.005.jpeg)
 
 
-<a name="_page7_x72.00_y373.22"></a>**Phase 2 - Vision and Use-Case![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.006.png)**
+<a name="_page7_x72.00_y373.22"></a>**Phase 2 - Vision and Use-Case**
 
 - **Vision**
   - ***Problem Statement***
