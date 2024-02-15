@@ -1,4 +1,4 @@
-***System Analysis and Design Project - Arsalan Jabbari***
+***System Analysis and Design Project***
 
 ***Online Shop Development System***
 
