@@ -225,233 +225,175 @@
       
 - **Use-Cases Scenario**
   
-      1. ***Authentication***
+      1. Authentication
          a. User chooses “Log-In” between “Log-In” and “Register” in the first page.
          b. User enters their username, password, and selects their role in the multiple choice (Customer, Admin, Super-Admin).
          c. System checks if entered information exists in users’ information based on the entered role.
          d. System displays a success message.
          e. System leads the user to their first page (based on their role).
-      - **Alternative Flow**
-         **b.1. User’s username or password is wrong.**
-         **b.1.1. The system asks the user to enter their information again or go to the registration page.**
+      - Alternative Flow
+         b.1. User’s username or password is wrong.
+         b.1.1. The system asks the user to enter their information again or go to the registration page.
       
-      2. ***Customer Registration***
+      2. Customer Registration
          a. User chooses “Register” between “Log-In” and “Register” in the first page.
          b. User enters their username, password, fullname, e-mail, phone, address, zip-code.
          c. System sends a verification e-mail to their entered e-mail.
          d. System verifies the customer after receiving the verification.
          e. System creates a cart for new customer and assign it to them.
          f. System leads the user to the customer's first page.
-      - **Alternative Flow**
-         **b.1. They enters a reserved username as their username.**
-         **b.1.1. System asks the customer to change their username.**
-         **b.2. They enters a reserved e-mail address as their e-mail.**
-         **b.2.1. System asks the customer to change their e-mail.**
-         **b.3. The customer doesn't fill all the fields and submit the form.**
-         **b.3.1. System asks the customer to fill all fields.**
-         **d.1. System doesn’t get verification from the customer's email after 2 minutes.**
-         **d.1.1. System tells the customer that you don’t verified and fill the form again.**
+      - Alternative Flow
+         b.1. They enters a reserved username as their username.
+         b.1.1. System asks the customer to change their username.
+         b.2. They enters a reserved e-mail address as their e-mail.
+         b.2.1. System asks the customer to change their e-mail.
+         b.3. The customer doesn't fill all the fields and submit the form.
+         b.3.1. System asks the customer to fill all fields.
+         d.1. System doesn’t get verification from the customer's email after 2 minutes.
+         d.1.1. System tells the customer that you don’t verified and fill the form again.
       
-      3. ***Search Product***
+      3. Search Product
          a. Customer search for their desired product.
          b. System finds and displays the entered product.
-      - **Alternative Flow**
-         **b.1. System doesn’t find the product.**
-         **b.1.1. System displays the-not-found-message.**
+      - Alternative Flow
+         b.1. System doesn’t find the product.
+         b.1.1. System displays the-not-found-message.
       
-      4. ***Browse Category***
+      4. Browse Category
          a. Customer selects their desired category.
          b. System displays the selected category.
   
-      5. ***Write Comment***
+      5. Write Comment
          a. Customer comments for displayed product and submits.
       
-      6. ***Add Product to Cart***   
+      6. Add Product to Cart
          a. Customer adds the displayed product to his cart.
-      - **Alternative Flow**   
-         **a.1. Selected product is not available.**
-         **a.1.1. System doesn’t add it to cart and show appropriate message.**
+      - Alternative Flow   
+         a.1. Selected product is not available.
+         a.1.1. System doesn’t add it to cart and show appropriate message.
       
-      7. ***Check Cart***
+      7. Check Cart
          a. Customer request leading to the pending cart’s page.
          
-      8. ***Change Amount in Cart***
+      8. Change Amount in Cart
          a. Customer changes the amount of selected products incrementally or decrementally in the cart's page.
-      - **Alternative Flow**
-         **a.1. Unavailability of a product after incrementing its amount.**
+      - Alternative Flow
+         a.1. Unavailability of a product after incrementing its amount.
       
-      9. ***Delete Cart (Cancel Cart)***
+      9. Delete Cart (Cancel Cart)
          a. Customer decides to cancel their purchase/delete the pending cart.
          b. System deletes the customer’s cart’s content.
      
-      10. ***Pay Cart (Finalize Cart)***
+      10. Pay Cart (Finalize Cart)
          a. Customer decides to pay their pending cart/finalize their cart.
          b. System calculates the overall cost and displays it and asks the customer to confirm the bill.
          c. System leads the customer to the Payment-System.
          d. System gets success from the payment system.
          e. System registers the related order and cleans the customer’s cart.
          f. System asks the delivery system for a paid order and displays its details.
-      - **Alternative Flow**
+      - Alternative Flow
          a.1. The cart is empty.
          a.1.1. System displays appropriate messages.   
          b.1. Customer doesn’t confirm the bill.   
          c.1.1. System redirects the customer to the cart page. d.1. The payment was not successful.   
          e.1.1. System displays appropriate message.
       
-      11. ***Update Delivery Status***
+      11. Update Delivery Status
          a. System asks the delivery system to update orders’ delivery status and informs the system every six hours.
          b. System updates delivery statuses in orders of system based on delivery system reports.
   
-      12. ***Add Product***
+      12. Add Product
          a. User (Admin or Super-Admin) enters a new product detail to define it in the system.
          b. System registers the new product and displays the appropriate message.
-      - **Alternative Flow**
+      - Alternative Flow
          b.1. System finds the entered details of the product not unique.
          b.1.1. Displays appropriate error message and let user try again.
       
-      13. ***Edit Product***
+      13. Edit Product
          a. User (Admin or Super-Admin) enters a product’s details to find it in the system.
          b. User (Admin or Super-Admin) enters the product’s new details to save its new version in the system.
          c. System registers the new version of the product and displays the appropriate message.
-      - **Alternative Flow**
+      - Alternative Flow
          b.1. System finds the entered details of the product not unique.   
          b.1.1. Displays appropriate error message and let user try again.
       
-      14. ***Delete Product***
-      1. User (Admin or Super-Admin) enters a product’s details to delete it in the system.
-      1. System deletes the product and displays the appropriate message.
-      - **Alternative Flow**
+      14. Delete Product
+         a. User (Admin or Super-Admin) enters a product’s details to delete it in the system.
+         b. System deletes the product and displays the appropriate message.
+      - Alternative Flow
+         b.1. System doesn’t find the entered details of the product.   
+         b.1.1. Displays appropriate error message and let user try again.
       
-      b.1. System doesn’t find the entered details of the product.
+      15. Add Category
+         a. User (Admin or Super-Admin) enters a new category detail to define it in the system.
+         b. System registers the new category and displays the appropriate message.
+      - Alternative Flow      
+         b.1. System finds the entered details of the category not unique.   
+         b.1.1. Displays appropriate error message and let user try again.
       
-      b.1.1. Displays appropriate error message and let
+      16. Edit Category
+         a. User (Admin or Super-Admin) enters a category’s details to find it in the system.
+         b. User (Admin or Super-Admin) enters the category’s new details to save its new version in the system.
+         c. System registers the new version of the product and displays the appropriate message.
+      - Alternative Flow
+         b.1. System finds the entered details of the product not unique.  
+         b.1.1. Displays appropriate error message and let user try again.
       
-      user try
+      17. Delete Category
+         a. User (Admin or Super-Admin) enters a category’s details to delete it in the system.
+         b. System deletes the category and displays the appropriate message.
+      - Alternative Flow
+         b.1. System doesn’t find the entered details of the category.
+         b.1.1. Displays appropriate error message and let user try again.
       
-      again.
+      18. Reply Comment
+         a. User (Admin or Super-Admin) enters a comment’s details to reply.
+         b. User (Admin or Super-Admin) write the reply comment.
+         c. System inserts the reply comment and displays the appropriate message.
+      - Alternative Flow
+         c.1. System doesn’t find the entered details of the comment.   
+         c.1.1. Displays appropriate error message and let user try again.
       
-      15. ***Add Category***
-      1. User (Admin or Super-Admin) enters a new category detail to define it in the system.
-      1. System registers the new category and displays the appropriate message.
-      - **Alternative Flow**
+      19. Delete Comment
+         a. User (Admin or Super-Admin) enters a comment’s details to delete it in the system.
+         b. System deletes the comment and displays the appropriate message.![ref1]
+      - Alternative Flow
+         b.1. System doesn’t find the entered details of the comment.
+         b.1.1. Displays appropriate error message and let user try again.
       
-      b.1. System finds the entered details of the category not unique.
+      20. Add Customer
+         a. User (Super-Admin) enters a new customer detail to define it in the system.
+         b. System registers the new customer and displays the appropriate message.
+      - Alternative Flow
+         b.1. System finds the entered details of the customer not unique.   
+         b.1.1. Displays appropriate error message and let user try again.
       
-      b.1.1. Displays appropriate error message and let
+      21. Edit Customer
+         a. User (Super-Admin) enters a customer’s details to find it in the system.
+         b. User (Super-Admin) enters the customer’s new details to save its new version in the system.
+         c. System registers the new version of the customer and displays the appropriate message.
+      - Alternative Flow
+         b.1. System finds the entered details of the customer not unique.   
+         b.1.1. Displays appropriate error message and let user try again.
+     
+      22. Delete Customer
+         a. User (Super-Admin) enters a customer’s details to delete it in the system.
+         b. System deletes the customer and displays the appropriate message.
+      - Alternative Flow
+         b.1. System doesn’t find the entered details of the customer.
+         b.1.1. Displays appropriate error message and let user try again.
       
-      user try
+      23. Manage Admin
+         a. User (Super-Admin) enters a customer’s details to promote it or enters an admin’s details to demote it in the system.
+         b. System changes the customer or admin’s role and displays the appropriate message.
+      - Alternative Flow
+         b.1. System doesn’t find the entered details.
+         b.1.1. Displays appropriate error message and let user try again.
       
-      again.
-      
-      16. ***Edit Category![ref1]***
-      1. User (Admin or Super-Admin) enters a category’s details to find it in the system.
-      1. User (Admin or Super-Admin) enters the category’s new details to save its new version in the system.
-      1. System registers the new version of the product and displays the appropriate message.
-      - **Alternative Flow**
-      
-      b.1. System finds the entered details of the product not unique.
-      
-      b.1.1. Displays appropriate error message and let
-      
-      user try
-      
-      again.
-      
-      17. ***Delete Category***
-      1. User (Admin or Super-Admin) enters a category’s details to delete it in the system.
-      1. System deletes the category and displays the appropriate message.
-      - **Alternative Flow**
-      
-      b.1. System doesn’t find the entered details of the category.
-      
-      b.1.1. Displays appropriate error message and let
-      
-      user try
-      
-      again.
-      
-      18. ***Reply Comment***
-      1. User (Admin or Super-Admin) enters a comment’s details to reply.
-      1. User (Admin or Super-Admin) write the reply comment.
-      1. System inserts the reply comment and displays the appropriate message.
-      - **Alternative Flow**
-      
-      c.1. System doesn’t find the entered details of the comment.
-      
-      c.1.1. Displays appropriate error message and let
-      
-      user try
-      
-      again.
-      
-      19. ***Delete Comment***
-      1. User (Admin or Super-Admin) enters a comment’s details to delete it in the system.
-      2. System deletes the comment and displays the appropriate message.![ref1]
-      - **Alternative Flow**
-      
-      b.1. System doesn’t find the entered details of the comment.
-      
-      b.1.1. Displays appropriate error message and let
-      
-      user try
-      
-      again.
-      
-      20. ***Add Customer***
-      1. User (Super-Admin) enters a new customer detail to define it in the system.
-      1. System registers the new customer and displays the appropriate message.
-      - **Alternative Flow**
-      
-      b.1. System finds the entered details of the customer not unique.
-      
-      b.1.1. Displays appropriate error message and let
-      
-      user try
-      
-      again.
-      
-      21. ***Edit Customer***
-      1. User (Super-Admin) enters a customer’s details to find it in the system.
-      1. User (Super-Admin) enters the customer’s new details to save its new version in the system.
-      1. System registers the new version of the customer and displays the appropriate message.
-      - **Alternative Flow**
-      
-      b.1. System finds the entered details of the customer not unique.
-      
-      b.1.1. Displays appropriate error message and let
-      
-      user try
-      
-      again.
-      
-      22. ***Delete Customer***
-      1. User (Super-Admin) enters a customer’s details to delete it in the system.
-      1. System deletes the customer and displays the appropriate message.
-      - **Alternative Flow![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.008.png)**
-      
-      b.1. System doesn’t find the entered details of the customer.
-      
-      b.1.1. Displays appropriate error message and let
-      
-      user try
-      
-      again.
-      
-      23. ***Manage Admin***
-      1. User (Super-Admin) enters a customer’s details to promote it or enters an admin’s details to demote it in the system.
-      1. System changes the customer or admin’s role and displays the appropriate message.
-      - **Alternative Flow**
-      
-      b.1. System doesn’t find the entered details.
-      
-      b.1.1. Displays appropriate error message and let user try
-      
-      again.
-      
-      24. ***Update Availability***
-      1. System asks the inventory system to update products’ availability and informs the system every six hours.
-      1. System updates availability in products of the system based on inventory system reports.
-
+      24. Update Availability
+         a. System asks the inventory system to update products’ availability and informs the system every six hours.
+         b. System updates availability in products of the system based on inventory system reports.
+  
 <a name="_page16_x72.00_y438.24"></a>**Phase 3 - Domain Model and SSD**
 
 1. **Domain Model**
