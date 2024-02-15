@@ -1,4 +1,4 @@
-﻿***System Analysis and Design Project - Arsalan Jabbari, Milad Nooraei![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.001.png)***
+﻿***System Analysis and Design Project - Arsalan Jabbari***
 
 ***Online Shop Development System***
 
@@ -19,134 +19,158 @@
 
 - **Name**
 
-***ClickCart Company***
-
-- **Collaboration Approach**
-
-We approached our project with a commitment to collaboration. Our partnership contributed ***equally to every aspect of the project***. Throughout the project's development, we fostered an environment of open communication and joint decision-making, ensuring that both voices were valued in every phase.
+   - ***ClickCart Company***
 
 - **Requirements**
 
-**Functional Requirements**
+   **Functional Requirements**
 
-1. User Authentication and Authorization:
-1. Differentiate access levels for Customer, Admin, and Super-Admin.![ref1]
-1. Authenticate and authorize users based on roles and permissions.
-2. Customer Management:
-   1. Registration and login functionality for Customers.
-   1. Allow customers to view and edit their profiles.
-2. Product Management:
-   1. Add, edit, delete products from the Products-Info database.
-   1. Assign products to relevant categories.
-2. Order Processing:
-   1. Enable Customers to place orders.
-   1. Allow Customers to view order history and status.
-   1. Admins should be able to manage and update order statuses.
-2. Admin and Super-Admin Controls:
-   1. Admins manage product listings, categories, and customer orders.
-   1. Super-Admin oversees the system, managing admins and system settings.
-2. Category Management:
-   1. Ability to create, update, and delete product categories in the Categories-Info database.
-2. Comments and Feedback:
-   1. Allow Customers to leave comments and feedback on products.
-   1. Admins should be able to moderate and manage comments.
-2. Payment and Delivery Integration:
-1. Integration with Payment-System for secure payment processing.
-1. Integration with Delivery-System for order shipment and tracking.
-9. Inventory Management:![ref1]
+      1. User Authentication and Authorization:
+         a. Differentiate access levels for Customer, Admin, and Super-Admin.![ref1]
+         b. Authenticate and authorize users based on roles and permissions.
+  
+      2. Customer Management:
+         a. Registration and login functionality for Customers.
+         b. Allow customers to view and edit their profiles.
+  
+      3. Product Management:
+         a. Add, edit, delete products from the Products-Info database.
+         b. Assign products to relevant categories.
+  
+      4. Order Processing:
+         a. Enable Customers to place orders.
+         b. Allow Customers to view order history and status.
+         c. Admins should be able to manage and update order statuses.
+  
+      5. Admin and Super-Admin Controls:
+         a. Admins manage product listings, categories, and customer orders.
+         b. Super-Admin oversees the system, managing admins and system settings.
+  
+      6. Category Management:
+         a. Ability to create, update, and delete product categories in the Categories-Info database.
+  
+      7. Comments and Feedback:
+         a. Allow Customers to leave comments and feedback on products.
+         b. Admins should be able to moderate and manage comments.
+  
+      8. Payment and Delivery Integration:
+         a. Integration with Payment-System for secure payment processing.
+         b. Integration with Delivery-System for order shipment and tracking.
+  
+      9. Inventory Management:
+         a. Connect Products-Info with Inventory-System to manage stock levels and availability.
 
-a. Connect Products-Info with Inventory-System to manage stock levels and availability.
+   **Non-Functional Requirement**
 
-**Non-Functional Requirement**
-
-1. Security:
-   1. Implement secure encryption methods for user data and transactions.
-   1. Regular data backups to prevent data loss.
-1. Scalability and Performance:
-   1. Ensure the system can handle increasing numbers of users and transactions.
-   1. Optimize system performance to provide a seamless shopping experience.
-1. User Interface and Experience:
-   1. Design an intuitive and user-friendly interface for easy navigation.
-   1. Ensure compatibility across various devices and browsers.
-1. Reliability:
-   1. Minimize system downtime and ensure high availability.
-1. Compliance:
-
-a. Ensure compliance with relevant data protection and privacy regulations.
-
-These requirements should serve as a foundation for the development of your online shop system, focusing on the functionalities needed to manage data, users, and external systems effectively while delivering a seamless shopping experience for customers. Tailor and expand upon these requirements based on your specific project needs and goals.
+      1. Security:
+         a. Implement secure encryption methods for user data and transactions.
+         b. Regular data backups to prevent data loss.
+  
+      2. Scalability and Performance:
+         a. Ensure the system can handle increasing numbers of users and transactions.
+         b. Optimize system performance to provide a seamless shopping experience.
+  
+      3. User Interface and Experience:
+         a. Design an intuitive and user-friendly interface for easy navigation.
+         b. Ensure compatibility across various devices and browsers.
+  
+      4. Reliability:
+         a. Minimize system downtime and ensure high availability.
+  
+      5. Compliance:
+         a. Ensure compliance with relevant data protection and privacy regulations.
+      
+      These requirements should serve as a foundation for the development of your online shop system, focusing on the functionalities needed to manage data, users, and external systems effectively while delivering a seamless shopping experience for customers. Tailor and expand upon these requirements based on your specific project needs and goals.
 
 - **Capabilities**
-1. User Management:
-1. Registration and login for Customers, Admins, and Super-Admins.
-2. Password management and security features like password reset and![ref1] account recovery.
-2. Role-Based Access Control:
-   1. Differentiate between Customer, Admin, and Super-Admin roles with varying access levels and permissions.
-   1. Super-Admin privileges for system-wide management and oversight.
-2. Product Catalog Management:
-   1. Ability to add, edit, and delete products from the Products-Info database.
-   1. Categorize products into distinct categories from Categories-Info.
-2. Order Processing Capabilities:
-   1. Allow Customers to add items to their carts, place orders, and proceed to checkout.
-   1. Enable Admins to manage and update order statuses, view order details, and track deliveries.
-2. Comment and Feedback Management:
-   1. Enable Customers to leave comments and ratings on products.
-   1. Admins can moderate, respond to, or remove comments as needed.
-2. Integration Capabilities:
-   1. Seamless integration with external systems such as Payment-System, Delivery-System, and Inventory-System.
-   1. Real-time synchronization of inventory levels with the Inventory-System.
-2. Reporting and Analytics:
-   1. Generate reports on sales, customer behavior, popular products, and inventory levels for Admins and Super-Admins.
-   1. Provide insights and analytics to aid in decision-making and business growth strategies.
-2. Payment and Checkout Capabilities:
-1. Secure payment processing through Payment-System integration.
-2. Multiple payment options (credit/debit cards, digital wallets, etc.) for Customers.![ref1]
-9. Inventory Management:
-
-a. Track and manage product inventory levels, update stock availability, and notify when items are out of stock.
-
-10\.Security and Compliance:
-
-1. Implement encryption measures to protect user data and transactions.
-1. Ensure compliance with relevant data protection regulations (GDPR, etc.).
-
-11\.Scalability and Performance:
-
-a. Ability to handle increasing user traffic and transaction volumes without compromising system performance.
+  
+      1. User Management:
+         a. Registration and login for Customers, Admins, and Super-Admins.
+         b. Password management and security features like password reset and account recovery.
+      
+      2. Role-Based Access Control:
+         a. Differentiate between Customer, Admin, and Super-Admin roles with varying access levels and permissions.
+         b. Super-Admin privileges for system-wide management and oversight.
+      
+      3. Product Catalog Management:
+         a. Ability to add, edit, and delete products from the Products-Info database.
+         b. Categorize products into distinct categories from Categories-Info.
+      
+      4. Order Processing Capabilities:
+         a. Allow Customers to add items to their carts, place orders, and proceed to checkout.
+         b. Enable Admins to manage and update order statuses, view order details, and track deliveries.
+      
+      5. Comment and Feedback Management:
+         a. Enable Customers to leave comments and ratings on products.
+         b. Admins can moderate, respond to, or remove comments as needed.
+      
+      6. Integration Capabilities:
+         a. Seamless integration with external systems such as Payment-System, Delivery-System, and Inventory-System.
+         b. Real-time synchronization of inventory levels with the Inventory-System.
+      
+      7. Reporting and Analytics:
+         a. Generate reports on sales, customer behavior, popular products, and inventory levels for Admins and Super-Admins.
+         b. Provide insights and analytics to aid in decision-making and business growth strategies.
+      
+      8. Payment and Checkout Capabilities:
+         a. Secure payment processing through Payment-System integration.
+         b. Multiple payment options (credit/debit cards, digital wallets, etc.) for Customers.
+      
+      9. Inventory Management:
+         a. Track and manage product inventory levels, update stock availability, and notify when items are out of stock.
+      
+      10.Security and Compliance:
+         a. Implement encryption measures to protect user data and transactions.
+         b. Ensure compliance with relevant data protection regulations (GDPR, etc.).
+      
+      11.Scalability and Performance:
+         a. Ability to handle increasing user traffic and transaction volumes without compromising system performance.
 
 - **Applicabilities**
-1. E-commerce Operations:
-   1. The system is applicable for businesses aiming to establish an online presence and conduct e-commerce operations.
-   1. Suitable for retail businesses looking to sell products online to a wide customer base.
-1. Multiple User Roles and Access Levels:
-   1. Applicable for systems requiring distinct user roles like Customers, Admins, and Super-Admins, each with specific access levels and permissions.
-   1. Ideal for platforms necessitating controlled access to different functionalities based on user roles.
-1. Product-Centric Businesses:
-1. Suitable for businesses heavily reliant on product catalog management, allowing easy addition, editing, and categorization of products.
-1. Applicable for businesses dealing with various product categories and inventory management needs.
-4. Order Processing and Fulfillment:![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.003.png)
-   1. Applicable for businesses requiring a streamlined order processing system, enabling Customers to place orders and Admins to manage and fulfill them.
-   1. Ideal for businesses seeking efficient order tracking and status updates.
-4. Interfacing with External Systems:
-   1. Suitable for businesses needing integration with external systems such as Payment-System, Delivery-System, and Inventory-System.
-   1. Applicable for platforms aiming to synchronize inventory levels, manage payments securely, and facilitate order deliveries.
-4. Feedback and Review Management:
-   1. Relevant for businesses wanting to collect and manage customer feedback, ratings, and comments on products.
-   1. Ideal for platforms aiming to engage customers through reviews and interactions.
-4. Compliance and Security Requirements:
-   1. Applicable for businesses requiring adherence to data protection regulations and implementing secure measures for user data and transactions.
-   1. Suitable for platforms prioritizing user privacy and data security.
-4. Scalability and Performance Demands:
-1. Suitable for businesses anticipating growth and requiring a scalable system capable of handling increasing user traffic and transaction volumes.
-1. Ideal for platforms seeking high performance and reliability even during peak usage periods.
+     
+      1. E-commerce Operations:
+         a. The system is applicable for businesses aiming to establish an online presence and conduct e-commerce operations.
+         b. Suitable for retail businesses looking to sell products online to a wide customer base.
+  
+      2. Multiple User Roles and Access Levels:
+         a. Applicable for systems requiring distinct user roles like Customers, Admins, and Super-Admins, each with specific access levels and permissions.
+         b. Ideal for platforms necessitating controlled access to different functionalities based on user roles.
+  
+      3. Product-Centric Businesses:
+         a. Suitable for businesses heavily reliant on product catalog management, allowing easy addition, editing, and categorization of products.
+         b. Applicable for businesses dealing with various product categories and inventory management needs.
+  
+      4. Order Processing and Fulfillment:
+         a. Applicable for businesses requiring a streamlined order processing system, enabling Customers to place orders and Admins to manage and fulfill them.
+         b. Ideal for businesses seeking efficient order tracking and status updates.
+  
+      5. Interfacing with External Systems:
+         a. Suitable for businesses needing integration with external systems such as Payment-System, Delivery-System, and Inventory-System.
+         b. Applicable for platforms aiming to synchronize inventory levels, manage payments securely, and facilitate order deliveries.
+  
+      6. Feedback and Review Management:
+         a. Relevant for businesses wanting to collect and manage customer feedback, ratings, and comments on products.
+         b. Ideal for platforms aiming to engage customers through reviews and interactions.
+  
+      7. Compliance and Security Requirements:
+         a. Applicable for businesses requiring adherence to data protection regulations and implementing secure measures for user data and transactions.
+         b. Suitable for platforms prioritizing user privacy and data security.
+  
+      8. Scalability and Performance Demands:
+         a. Suitable for businesses anticipating growth and requiring a scalable system capable of handling increasing user traffic and transaction volumes.
+         b. Ideal for platforms seeking high performance and reliability even during peak usage periods.
+
 
 <a name="_page5_x72.00_y593.02"></a>**Phase 1 - DFD Level 0 & 1**
 
 ***DFD Level 0***
 
-***DFD Level 1![ref1]![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.004.jpeg)***
+![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.004.jpeg)
+
+***DFD Level 1***
 
 ![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.005.jpeg)
+
 
 <a name="_page7_x72.00_y373.22"></a>**Phase 2 - Vision and Use-Case![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.006.png)**
 
