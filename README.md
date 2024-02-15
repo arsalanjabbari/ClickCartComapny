@@ -165,11 +165,11 @@
 
 ***DFD Level 0***
 
-![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.004.jpeg)
+![](Software-Project/Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.004.jpeg)
 
 ***DFD Level 1***
 
-![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.005.jpeg)
+![](Software-Project/Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.005.jpeg)
 
 
 <a name="_page7_x72.00_y373.22"></a>**Phase 2 - Vision and Use-Case**
@@ -400,105 +400,105 @@
 
    (Done after 4 iterations.)
    
-   ![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.009.jpeg)
+   ![](Software-Project/Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.009.jpeg)
 
 **SSD**
 
 1. ***Authentication***
 
-   ![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.010.jpeg)
+   ![](Software-Project/Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.010.jpeg)
 
 3. ***Customer Registration***
 
-   ![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.011.jpeg)![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.012.jpeg)
+   ![](Software-Project/Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.011.jpeg)![](Software-Project/Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.012.jpeg)
 
 5. ***Search Product***
 
-   ![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.013.jpeg)
+   ![](Software-Project/Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.013.jpeg)
 
 7. ***Browse Category***
 
-   ![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.014.jpeg)
+   ![](Software-Project/Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.014.jpeg)
 
 5. ***Write Comment***
 
-   ![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.015.jpeg)
+   ![](Software-Project/Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.015.jpeg)
 
 6. ***Add Product to Cart***
 
-   ![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.016.jpeg)
+   ![](Software-Project/Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.016.jpeg)
 
 7. ***Check Cart***
 
-   ![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.017.png)
+   ![](Software-Project/Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.017.png)
 
 8. ***Change Amount in Cart***
 
-   ![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.018.jpeg)
+   ![](Software-Project/Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.018.jpeg)
 
 9. ***Delete Cart (Cancel Cart)***
 
-   ![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.019.jpeg)
+   ![](Software-Project/Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.019.jpeg)
 
 10. ***Pay Cart (Finalize Cart)***
 
-   ![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.020.jpeg)
+   ![](Software-Project/Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.020.jpeg)
 
 11. ***Update Delivery Status***
 
-   ![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.021.png)
+   ![](Software-Project/Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.021.png)
 
 12. ***Add Product***
 
-   ![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.022.jpeg)
+   ![](Software-Project/Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.022.jpeg)
 
 13. ***Edit Product***
 
-   ![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.023.jpeg)
+   ![](Software-Project/Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.023.jpeg)
 
 14. ***Delete Product***
 
-   ![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.024.jpeg)
+   ![](Software-Project/Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.024.jpeg)
 
 15. ***Add Category***
 
-   ![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.025.jpeg)
+   ![](Software-Project/Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.025.jpeg)
 
 16. ***Edit Category***
 
-   ![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.026.jpeg)
+   ![](Software-Project/Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.026.jpeg)
 
 17. ***Delete Category***
 
-   ![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.027.jpeg)
+   ![](Software-Project/Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.027.jpeg)
 
 18. ***Reply Comment***
 
-   ![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.028.jpeg)
+   ![](Software-Project/Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.028.jpeg)
 
 19. ***Delete Comment***
 
-   ![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.029.jpeg)
+   ![](Software-Project/Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.029.jpeg)
 
 20. ***Add Customer***
 
-   ![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.030.jpeg)
+   ![](Software-Project/Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.030.jpeg)
 
 21. ***Edit Customer***
 
-   ![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.031.jpeg)
+   ![](Software-Project/Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.031.jpeg)
 
 22. ***Delete Customer***
 
-   ![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.032.jpeg)
+   ![](Software-Project/Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.032.jpeg)
 
 23. ***Manage Admin***
 
-   ![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.034.jpeg)
+   ![](Software-Project/Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.034.jpeg)
 
 24. ***Update Availability***
 
-   ![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.035.png)
+   ![](Software-Project/Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.035.png)
 
 
 
@@ -917,7 +917,7 @@
 
 - **Class Diagram (Methods displayed without their parameters in case of abstraction)**
 
-![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.038.jpeg)
+![](Software-Project/Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.038.jpeg)
 
 
 <a name="_page40_x72.00_y418.68"></a>**Phase 6 - Sequence Diagram and Communication Diagram**
@@ -928,204 +928,204 @@
 
 1. *Authentication*
 
-![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.039.jpeg)
+![](Software-Project/Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.039.jpeg)
 
 2. *Customer Registration*
 
-![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.040.jpeg)
+![](Software-Project/Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.040.jpeg)
 
 3. *Search Product*
 
-![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.041.jpeg)
+![](Software-Project/Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.041.jpeg)
 
 4. *Browse Category*
 
-![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.042.jpeg)
+![](Software-Project/Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.042.jpeg)
 
 5. *Write Comment*
 
-![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.043.jpeg)
+![](Software-Project/Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.043.jpeg)
 
 6. *Add Product to Cart*
 
-![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.044.jpeg)
+![](Software-Project/Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.044.jpeg)
 
 7. *Check Cart*
 
-![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.045.png)
+![](Software-Project/Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.045.png)
 
 9. *Change Amount in Cart*
 
-![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.046.png)
+![](Software-Project/Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.046.png)
 
 9. *Cancel Cart*
 
-![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.047.png)
+![](Software-Project/Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.047.png)
 
 10. *Pay Cart*
 
-![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.048.jpeg)
+![](Software-Project/Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.048.jpeg)
 
 11. *Update Delivery Status*
 
-![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.049.png)
+![](Software-Project/Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.049.png)
 
 12. *Add Product*
 
-![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.050.jpeg)
+![](Software-Project/Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.050.jpeg)
 
 13. *Edit Product*
 
-![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.051.jpeg)
+![](Software-Project/Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.051.jpeg)
 
 14. *Delete Product*
 
-![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.052.png)
+![](Software-Project/Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.052.png)
 
 15. *Add Category*
 
-![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.053.png)
+![](Software-Project/Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.053.png)
 
 16. *Edit Category*
 
-![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.054.png)
+![](Software-Project/Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.054.png)
 
 17. *Delete Category*
 
-![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.055.png)
+![](Software-Project/Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.055.png)
 
 18. *Reply Comment*
 
-![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.056.jpeg)
+![](Software-Project/Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.056.jpeg)
 
 19. *Delete Comment*
 
-![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.057.jpeg)
+![](Software-Project/Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.057.jpeg)
 
 20. *Add Customer*
 
-![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.058.jpeg)
+![](Software-Project/Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.058.jpeg)
 
 21. *Edit Customer*
 
-![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.059.jpeg)
+![](Software-Project/Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.059.jpeg)
 
 22. *Delete Customer*
 
-![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.060.jpeg)
+![](Software-Project/Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.060.jpeg)
 
 23. *Manage Admin*
 
-![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.061.png)
+![](Software-Project/Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.061.png)
 
 24. *Update Availability*
 
-![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.062.png)![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.063.png)
+![](Software-Project/Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.062.png)![](Software-Project/Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.063.png)
 
 
 - **Communication Diagram**
      
    - *Authentication*
    
-   ![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.064.png)
+   ![](Software-Project/Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.064.png)
    
    - *Customer Registration*
    
-   ![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.065.png)
+   ![](Software-Project/Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.065.png)
    
    - *Search Product*
    
-   ![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.066.png)
+   ![](Software-Project/Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.066.png)
    
    - *Browse Category*
    
-   ![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.067.png)
+   ![](Software-Project/Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.067.png)
    
    - *Write Comment*
    
-   ![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.068.jpeg)
+   ![](Software-Project/Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.068.jpeg)
    
    - *Add Product to Cart*
    
-   ![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.069.jpeg)
+   ![](Software-Project/Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.069.jpeg)
    
    - *Check Cart*
    
-   ![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.070.png)
+   ![](Software-Project/Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.070.png)
    
    - *Change Amount in Cart*
    
-   ![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.071.png)
+   ![](Software-Project/Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.071.png)
    
    - *Cancel Cart*
    
-   ![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.072.png)
+   ![](Software-Project/Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.072.png)
    
    - *Pay Cart*
    
-   ![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.073.jpeg)
+   ![](Software-Project/Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.073.jpeg)
    
    - *Update Delivery Status*
    
-   ![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.074.png)
+   ![](Software-Project/Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.074.png)
    
    - *Add Product*
    
-   ![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.075.png)
+   ![](Software-Project/Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.075.png)
    
    - *Edit Product*
    
-   ![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.076.png)
+   ![](Software-Project/Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.076.png)
    
    - *Delete Product*
    
-   ![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.077.png)
+   ![](Software-Project/Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.077.png)
    
    - *Add Category*
    
-   ![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.078.png)
+   ![](Software-Project/Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.078.png)
    
    - *Edit Category*
    
-   ![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.079.png)
+   ![](Software-Project/Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.079.png)
    
    - *Delete Category*
    
-   ![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.080.png)
+   ![](Software-Project/Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.080.png)
    
    - *Reply Comment*
    
-   ![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.081.jpeg)
+   ![](Software-Project/Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.081.jpeg)
   
    - *Delete Comment*
    
-   ![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.082.jpeg)
+   ![](Software-Project/Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.082.jpeg)
    
    - *Add Customer*
    
-   ![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.083.png)
+   ![](Software-Project/Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.083.png)
    
    - *Edit Customer*
    
-   ![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.084.png)
+   ![](Software-Project/Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.084.png)
    
    - *Delete Customer*
    
-   ![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.085.png)
+   ![](Software-Project/Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.085.png)
    
    - *Manage Admin*
    
-   ![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.086.png)
+   ![](Software-Project/Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.086.png)
    
-   ![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.087.png)
+   ![](Software-Project/Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.087.png)
    
    - *Update Availability*
    
-   ![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.088.png)
+   ![](Software-Project/Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.088.png)
    
    - *Startup Use Case Collaboration Diagram*
    
-   ![](Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.089.jpeg)
+   ![](Software-Project/Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.089.jpeg)
 
 
 
@@ -1151,4 +1151,4 @@
 
 ***Product Serial-number:*** A unique identifier assigned to individual products, allowing for the differentiation and tracking of specific items within the inventory or sales system. Serial numbers are often used for product identification, warranties, and traceability.
 
-[ref1]: Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.002.png
+[ref1]: Software-Project/Aspose.Words.1816cf2d-6f2b-477e-921d-0f4de917076c.002.png
